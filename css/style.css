@@ -2887,7 +2887,7 @@ a.logo:hover{
     padding-top: 3px;
     font-size: 17px;
     font-weight: 300;
-    color: #999;
+    color: #2F2F33;
     
     -webkit-transform: perspective(500px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
     -moz-transform: perspective(500px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
@@ -2922,7 +2922,7 @@ a.logo:hover{
     margin: 0 0 10px 0;
     padding: 0;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 700;
     color: #111;
 }
 
@@ -3129,7 +3129,7 @@ a.logo:hover{
 .alt-features-title{
     margin-bottom: 21px;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.4em;
 }
@@ -5315,7 +5315,7 @@ section:hover .small-item-carousel .owl-next{
     padding: 10px 20px 20px;
     font-size: 18px;
     line-height: 1.8;
-    color: #777;
+    color: #2F2F33;
 }
 
 
