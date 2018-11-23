@@ -381,7 +381,7 @@ h1,h2,h3,h4,h5,h6{
    
 }
 h1{
-    font-size: 32px;
+    font-size: 35px;
 }
 h2{
     font-size: 28px;
@@ -5244,7 +5244,7 @@ section:hover .small-item-carousel .owl-next{
 
 .accordion > dt{
     margin-bottom: 10px;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.2em;
@@ -5313,7 +5313,7 @@ section:hover .small-item-carousel .owl-next{
 .accordion > dd{
     margin-bottom: 10px;
     padding: 10px 20px 20px;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.8;
     color: #777;
 }
