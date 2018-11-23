@@ -2682,7 +2682,7 @@ a.logo:hover{
 
 .section-title {
     margin-bottom: 15px;
-    font-size: 18px;
+    font-size: 25px;
     font-weight: 400;
     text-transform: uppercase;
     text-align: center;
@@ -2714,7 +2714,7 @@ a.logo:hover{
 
 .section-heading {
     margin-bottom: 15px;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 400;
     text-transform: uppercase;
     text-align: center;
@@ -2728,7 +2728,7 @@ a.logo:hover{
     background: #111;
 }
 .section-text{
-    font-size: 15px;
+    font-size: 22px;
     font-weight: 300;
     color: #777;
     line-height: 1.7;
