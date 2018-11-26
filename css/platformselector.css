@@ -21,6 +21,9 @@
     width: 100%;
     display: block;
     text-align: left;
+}
+
+.platform .inner>span {
     padding: 12px 0;
 }
 
