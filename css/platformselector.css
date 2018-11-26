@@ -9,26 +9,22 @@
     top: 0;
     left: 0;
     right: 0;
-    text-transform: none;
 }
 
 .platform .inner a {
     color: #111
 }
 
-.platform .inner form label,
-.platform .inner>span {
-    width: 100%;
-    display: block;
-    text-align: left;
-}
-
 .platform .inner>span {
     padding: 12px 0;
+    width: 100%;
+    display: block;
 }
 
-.platform .inner form input {
-    float: left;
+.platform .inner .sendEmail,
+.platform .inner>span:first-child {
+    text-align: left;
+    text-transform: none;
 }
 
 .paypal {
@@ -59,9 +55,10 @@
 
 .thankYou {
     background-color: #338473;
-    text-align: left;
+    text-align: center;
+    width: 100%;
     padding: 1rem;
-    margin: 3rem 0;
+    margin: 1rem 0;
     color: white;
     float: left;
     clear: both;
