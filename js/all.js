@@ -1088,26 +1088,25 @@ function split_height_init() {
 }
 
 /* Platform selector functions */
-var showEmailLead = function(platformName) {
-    document.querySelector('#paypal').classList.add('hidden');
-    document.querySelector('#thank_you').classList.add('hidden');
-    document.querySelector('#sendEmail').classList.add('hidden');
-
-    document.querySelector('#sendEmail').classList.remove('hidden');
-    document.querySelector('#platform').value = platformName;
-
-};
-var showPaypalLink = function() {
-    document.querySelector('#paypal').classList.add('hidden');
-    document.querySelector('#thank_you').classList.add('hidden');
-    document.querySelector('#sendEmail').classList.add('hidden');
-
-    document.querySelector('#paypal').classList.remove('hidden');
-
-
+var showEmailLead = function(platformName, section) {
+    document.querySelector('#' + section + 'Paypal').classList.add('hidden');
+    document.querySelector('#' + section + 'ThankYou').classList.add('hidden');
+    document.querySelector('#' + section + 'SendEmail').classList.remove('hidden');
+    document.querySelector('#' + section + 'Platform').value = platformName;
+    document.querySelector('#' + section + 'PlatformName').innerHTML = platformName;
 
 };
+var showPaypalLink = function(section) {
+    document.querySelector('#' + section + 'ThankYou').classList.add('hidden');
+    document.querySelector('#' + section + 'SendEmail').classList.add('hidden');
+    document.querySelector('#' + section + 'Paypal').classList.remove('hidden');
+};
 
-var thankYou = function() {
-    document.querySelector('#thank_you').classList.remove('hidden');
+var thankYou = function(section) {
+    var thankyouId = '#' + section + 'ThankYou';
+    var thankyouObj = document.querySelector(thankyouId);
+    thankyouObj.classList.remove('hidden');
+    document.onclick = function() {
+        thankyouObj.classList.add('hidden');
+    }
 };

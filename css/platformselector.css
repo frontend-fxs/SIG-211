@@ -11,6 +11,10 @@
     right: 0;
 }
 
+.platform .inner a {
+    color: #111
+}
+
 .platform span {
     width: 100%;
     display: block;

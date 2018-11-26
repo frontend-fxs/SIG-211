@@ -63,21 +63,20 @@
                                         <div class="platform  hidden" id="platformHeader">
                                             <div class="inner btn btn-mod btn-w btn-round btn-large">
 
-
                                                 <span>Select your favorite platform</span>
-                                                <span onclick="showEmailLead('metatrader')"> Metatrader </span>
-                                                <span onclick="showEmailLead('ninja')"> NinjaTrader </span>
-                                                <span onclick="showPaypalLink()"> Ctrader </span>
+                                                <span onclick="showEmailLead('Metatrader','header')"> Metatrader </span>
+                                                <span onclick="showEmailLead('NinjaTrader','header')"> NinjaTrader </span>
+                                                <span onclick="showPaypalLink('header')"> Ctrader </span>
 
-                                                <a id="paypal" class="paypal hidden" href="#">Pay a membership with paypal </a>
-                                                <form action="https://docs.google.com/forms/d/e/1FAIpQLSfl76vAsY3SCRe_H2dnPd75y9R0fso2qy4J5RJ22rsdgf8YRg/formResponse" target="hiddenFrame" method="POST" id="sendEmail" class="sendEmail hidden" onsubmit="thankYou();">
-                                                    <label for="email">Please type your email to contact this Broker</label><br />
+                                                <a id="headerPaypal" class="paypal hidden" href="#">Pay a membership with paypal </a>
+                                                <form action="https://docs.google.com/forms/d/e/1FAIpQLSfl76vAsY3SCRe_H2dnPd75y9R0fso2qy4J5RJ22rsdgf8YRg/formResponse" target="hiddenFrame" method="POST" id="headerSendEmail" class="sendEmail hidden" onsubmit="thankYou('header');">
+                                                    <label for="email">Please type your email to contact <span id="headerPlatformName"></span></label><br />
                                                     <input type="email" class="email" id="email" name="entry.1342467543" value="">
-                                                    <input type="hidden" id="platform" name="entry.3304799" value="">
+                                                    <input type="hidden" id="headerPlatform" name="entry.3304799" value="">
                                                     <input type="submit" class="fxs_btn fxs_btn_cta">
                                                 </form>
                                                 <iframe style="display:none" name="hiddenFrame" id="hiddenFrame"></iframe>
-                                                <div class="hidden thankYou" id="thank_you">
+                                                <div class="hidden thankYou" id="headerThankYou">
                                                     <span>thank you</span>
                                                 </div>
 
@@ -454,8 +453,30 @@
                 </div>
 
                 <div class="align-center">
-                    <a href="#contact" class="btn btn-mod btn-round btn-large">Start investing</a>
+                    <a onclick="document.querySelector('#platformContent').classList.toggle('hidden');" class="btn btn-mod btn-round btn-large">Start investing</a>
                 </div>
+                <div class="platform  hidden" id="platformContent">
+                    <div class="inner btn btn-mod btn-w btn-round btn-large">
+
+                        <span>Select your favorite platform</span>
+                        <span onclick="showEmailLead('Metatrader','content')"> Metatrader </span>
+                        <span onclick="showEmailLead('NinjaTrader','content')"> NinjaTrader </span>
+                        <span onclick="showPaypalLink('content')"> Ctrader </span>
+
+                        <a id="contentPaypal" class="paypal hidden" href="#">Pay a membership with paypal </a>
+                        <form action="https://docs.google.com/forms/d/e/1FAIpQLSfl76vAsY3SCRe_H2dnPd75y9R0fso2qy4J5RJ22rsdgf8YRg/formResponse" target="hiddenFrame" method="POST" id="contentSendEmail" class="sendEmail hidden" onsubmit="thankYou('content');">
+                            <label for="email">Please type your email to contact <span id="contentPlatformName"></span></label><br />
+                            <input type="email" class="email" id="email" name="entry.1342467543" value="">
+                            <input type="hidden" id="contentPlatform" name="entry.3304799" value="">
+                            <input type="submit" class="fxs_btn fxs_btn_cta">
+                        </form>
+                        <iframe style="display:none" name="hiddenFrame" id="hiddenFrame"></iframe>
+                        <div class="hidden thankYou" id="contentThankYou">
+                            <span>thank you</span>
+                        </div>
+                    </div>
+                </div>
+
 
             </div>
         </section>
