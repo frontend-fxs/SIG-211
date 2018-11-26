@@ -60,7 +60,7 @@
                                         <div class="local-scroll">
                                             <a onclick="document.querySelector('#platformHeader').classList.toggle('hidden');" class="btn btn-mod btn-w btn-round btn-large">Get the app </a>
                                         </div>
-                                        <div class="platform header hidden" id="platformHeader">
+                                        <div class="platform hidden" id="platformHeader">
                                             <div class="inner btn btn-mod btn-w btn-round btn-large">
 
                                                 <span>Select your favorite platform</span>
@@ -75,7 +75,6 @@
                                                     <input type="hidden" id="headerPlatform" name="entry.3304799" value="">
                                                     <input type="submit" class="fxs_btn fxs_btn_cta">
                                                 </form>
-                                                <iframe style="display:none" name="hiddenFrame" id="hiddenFrame"></iframe>
                                                 <div class="hidden thankYou" id="headerThankYou">
                                                     <span>thank you</span>
                                                 </div>
@@ -139,12 +138,9 @@
         <!-- Text Section -->
         <section class="page-section" id="about">
             <div class="container relative">
-
                 <h2 class="section-title font-alt mb-70 mb-sm-40">
                     FXStreet Market Impact Signals
                 </h2>
-
-
                 <!-- Features Grid -->
                 <div class="row multi-columns-row features-grid">
                     <!-- Features Item -->
@@ -187,36 +183,29 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="col-md-6 col-md-offset-3 align-center" data-wow-delay="0.2s" data-wow-duration="2s">
+                <a onclick="document.querySelector('#platformText').classList.toggle('hidden');" class="btn btn-mod btn-round btn-large">Start investing</a>
+                <div class="platform hidden" id="platformText">
+                    <div class="inner btn btn-mod btn-round btn-large">
 
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3 mb-20 align-center wow fadeIn" data-wow-delay="0.2s" data-wow-duration="2s">
-                        <a onclick="document.querySelector('#platformText').classList.toggle('hidden');" class="btn btn-mod btn-round btn-large">Start investing</a>
-                        <div class="platform text hidden" id="platformText">
-                            <div class="inner btn btn-mod btn-w btn-round btn-large">
+                        <span>Select your favorite platform</span>
+                        <span onclick="showEmailLead('Metatrader','Text')"> Metatrader </span>
+                        <span onclick="showEmailLead('NinjaTrader','Text')"> NinjaTrader </span>
+                        <span onclick="showPaypalLink('Text')"> Ctrader </span>
 
-                                <span>Select your favorite platform</span>
-                                <span onclick="showEmailLead('Metatrader','Text')"> Metatrader </span>
-                                <span onclick="showEmailLead('NinjaTrader','Text')"> NinjaTrader </span>
-                                <span onclick="showPaypalLink('Text')"> Ctrader </span>
-
-                                <a id="TextPaypal" class="paypal hidden" href="#">Pay a membership with paypal </a>
-                                <form action="https://docs.google.com/forms/d/e/1FAIpQLSfl76vAsY3SCRe_H2dnPd75y9R0fso2qy4J5RJ22rsdgf8YRg/formResponse" target="hiddenFrame" method="POST" id="TextSendEmail" class="sendEmail hidden" onsubmit="thankYou('Text');">
-                                    <label for="email">Please type your email to contact <span id="TextPlatformName"></span></label>
-                                    <input type="email" class="email" id="email" name="entry.1342467543" value="">
-                                    <input type="hidden" id="TextPlatform" name="entry.3304799" value="">
-                                    <input type="submit" class="fxs_btn fxs_btn_cta">
-                                </form>
-                                <iframe style="display:none" name="hiddenFrame" id="hiddenFrame"></iframe>
-                                <div class="hidden thankYou" id="TextThankYou">
-                                    <span>thank you</span>
-                                </div>
-                            </div>
+                        <a id="TextPaypal" class="paypal hidden" href="#">Pay a membership with paypal </a>
+                        <form action="https://docs.google.com/forms/d/e/1FAIpQLSfl76vAsY3SCRe_H2dnPd75y9R0fso2qy4J5RJ22rsdgf8YRg/formResponse" target="hiddenFrame" method="POST" id="TextSendEmail" class="sendEmail hidden" onsubmit="thankYou('Text');">
+                            <label for="email">Please type your email to contact <span id="TextPlatformName"></span></label>
+                            <input type="email" class="email" id="email" name="entry.1342467543" value="">
+                            <input type="hidden" id="TextPlatform" name="entry.3304799" value="">
+                            <input type="submit" class="fxs_btn fxs_btn_cta">
+                        </form>
+                        <div class="hidden thankYou" id="TextThankYou">
+                            <span>thank you</span>
                         </div>
                     </div>
-
                 </div>
-
-
             </div>
         </section>
         <!-- End Text Section -->
@@ -410,11 +399,9 @@
         <!-- Portfolio Section -->
         <section class="page-section" id="portfolio">
             <div class="container relative">
-
                 <h2 class="section-title font-alt mb-70 mb-sm-40">
                     Case Stadies
                 </h2>
-
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <div class="section-text align-center mb-70 mb-xs-40">
@@ -422,9 +409,7 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="row multi-columns-row mb-20 mb-xs-10">
-
                     <!-- Portfolio Item -->
                     <div class="col-sm-6 col-md-4 col-lg-4 mb-20 wow fadeIn" data-wow-delay="0.1s" data-wow-duration="2s">
 
@@ -439,10 +424,8 @@
                         <div class="post-prev-text">
                             Sed id dolor consectetur fermentum nibh volutpat, accumsan lorem ipsumovich purus.
                         </div>
-
                     </div>
                     <!-- End Portfolio Item -->
-
                     <!-- Portfolio Item -->
                     <div class="col-sm-6 col-md-4 col-lg-4 mb-20 wow fadeIn" data-wow-delay="0.2s" data-wow-duration="2s">
 
@@ -481,49 +464,39 @@
 
                 </div>
 
-                <div class="row multi-columns-row mb-20 mb-xs-10">
+                <!-- Portfolio Item -->
 
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 align-center" data-wow-delay="0.2s" data-wow-duration="2s">
+                    <a onclick="document.querySelector('#platformPortfolio').classList.toggle('hidden');" class="btn btn-mod btn-round btn-large">Start investing</a>
+                    <div class="platform hidden" id="platformPortfolio">
+                        <div class="inner btn btn-mod btn-round btn-large">
 
-                    <!-- Portfolio Item -->
+                            <span>Select your favorite platform</span>
+                            <span onclick="showEmailLead('Metatrader','Portfolio')"> Metatrader </span>
+                            <span onclick="showEmailLead('NinjaTrader','Portfolio')"> NinjaTrader </span>
+                            <span onclick="showPaypalLink('Portfolio')"> Ctrader </span>
 
-                    <div class="col-md-6 col-md-offset-3 mb-20 align-center wow fadeIn" data-wow-delay="0.2s" data-wow-duration="2s">
-                        <a onclick="document.querySelector('#platformPortfolio').classList.toggle('hidden');" class="btn btn-mod btn-round btn-large">Start investing</a>
-                        <div class="platform portfolio hidden" id="platformPortfolio">
-                            <div class="inner btn btn-mod btn-w btn-round btn-large">
-
-                                <span>Select your favorite platform</span>
-                                <span onclick="showEmailLead('Metatrader','Portfolio')"> Metatrader </span>
-                                <span onclick="showEmailLead('NinjaTrader','Portfolio')"> NinjaTrader </span>
-                                <span onclick="showPaypalLink('Portfolio')"> Ctrader </span>
-
-                                <a id="PortfolioPaypal" class="paypal hidden" href="#">Pay a membership with paypal </a>
-                                <form action="https://docs.google.com/forms/d/e/1FAIpQLSfl76vAsY3SCRe_H2dnPd75y9R0fso2qy4J5RJ22rsdgf8YRg/formResponse" target="hiddenFrame" method="POST" id="PortfolioSendEmail" class="sendEmail hidden" onsubmit="thankYou('Portfolio');">
-                                    <label for="email">Please type your email to contact <span id="PortfolioPlatformName"></span></label>
-                                    <input type="email" class="email" id="email" name="entry.1342467543" value="">
-                                    <input type="hidden" id="PortfolioPlatform" name="entry.3304799" value="">
-                                    <input type="submit" class="fxs_btn fxs_btn_cta">
-                                </form>
-                                <iframe style="display:none" name="hiddenFrame" id="hiddenFrame"></iframe>
-                                <div class="hidden thankYou" id="PortfolioThankYou">
-                                    <span>thank you</span>
-                                </div>
+                            <a id="PortfolioPaypal" class="paypal hidden" href="#">Pay a membership with paypal </a>
+                            <form action="https://docs.google.com/forms/d/e/1FAIpQLSfl76vAsY3SCRe_H2dnPd75y9R0fso2qy4J5RJ22rsdgf8YRg/formResponse" target="hiddenFrame" method="POST" id="PortfolioSendEmail" class="sendEmail hidden" onsubmit="thankYou('Portfolio');">
+                                <label for="email">Please type your email to contact <span id="PortfolioPlatformName"></span></label>
+                                <input type="email" class="email" id="email" name="entry.1342467543" value="">
+                                <input type="hidden" id="PortfolioPlatform" name="entry.3304799" value="">
+                                <input type="submit" class="fxs_btn fxs_btn_cta">
+                            </form>
+                            <div class="hidden thankYou" id="PortfolioThankYou">
+                                <span>thank you</span>
                             </div>
                         </div>
                     </div>
-                    <!-- End Portfolio Item -->
-
-                    <!-- Portfolio Item -->
-
-                    <div class="col-sm-6 col-md-4 col-lg-4 mb-20 wow fadeIn" data-wow-delay="0.2s" data-wow-duration="2s">
-                    </div>
-
-                    <!-- End Portfolio Item -->
-
-
                 </div>
             </div>
+
         </section>
         <!-- End Portfolio Section -->
+
+
 
         <!-- Section -->
         <section class="page-section bg-gray-lighter" id="qa">
@@ -618,6 +591,7 @@
         </div>
         <!-- End Page Wrap -->
 
+        <iframe style="display:none" name="hiddenFrame" id="hiddenFrame"></iframe>
 
         <!-- JS -->
         <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>

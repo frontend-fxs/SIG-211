@@ -9,10 +9,15 @@
     top: 0;
     left: 0;
     right: 0;
+    z-index: 9999;
 }
 
 .platform .inner a {
-    color: #111
+    color: #fff;
+}
+
+.platform .inner.btn-w a {
+    color: #111;
 }
 
 .platform .inner>span {
@@ -26,13 +31,15 @@
     clear: both;
 }
 
-.platform .inner .sendEmail .email {}
+.platform .inner .sendEmail label {
+    display: block;
+}
 
 .platform .inner .sendEmail .send {
     cursor: pointer;
 }
 
-.platform .inner .sendEmail label,
+.platform .inner .sendEmail .btn-cta .platform .inner .sendEmail label,
 .platform .inner>span:first-child {
     text-transform: none;
     text-align: left;
@@ -73,23 +80,9 @@
 
 
 /**
-Hola Marina
-Si vols estilar de manera diferent els 3 formularis ho pots fer de la següent manera
-.platform.header 
-.platform.text
-.platform.portfolio
-I a continuació el que vulguis sobreescriure. Per exemple:
+El formulari de la capçalera te .btn-w
+        .platform .inner.btn-w
+Els altres dos no tenen  .btn-w
+        .platform .inner
 
-.platform.header .inner .paypal {
-    *******
-}
-o
-.platform.text .inner .paypal {
-        *******
-}
-
-o
-.platform.portfolio .inner .paypal {
-    *******
-}
 */
