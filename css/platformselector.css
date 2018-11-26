@@ -21,10 +21,11 @@
     display: block;
 }
 
-.platform .inner .sendEmail,
+.platform .inner .sendEmail label,
 .platform .inner>span:first-child {
-    text-align: left;
     text-transform: none;
+    text-align: left;
+    width: 100%;
 }
 
 .paypal {
@@ -45,6 +46,7 @@
 
 .sendEmail {
     padding: 1rem 0;
+    clear: both;
 }
 
 .sendEmail .email {}
