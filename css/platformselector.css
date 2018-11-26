@@ -16,11 +16,12 @@
     color: #111
 }
 
+.platform .inner form label,
 .platform .inner>span {
     width: 100%;
     display: block;
     text-align: left;
-    padding: 12px 45px;
+    padding: 12px 0;
 }
 
 .paypal {
