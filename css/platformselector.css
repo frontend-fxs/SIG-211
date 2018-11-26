@@ -26,6 +26,7 @@
     text-transform: none;
     text-align: left;
     width: 100%;
+    display: block;
 }
 
 .paypal {
