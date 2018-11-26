@@ -16,7 +16,7 @@
     color: #111
 }
 
-.platform>span {
+.platform .inner>span {
     width: 100%;
     display: block;
     text-align: left;
