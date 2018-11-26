@@ -33,13 +33,18 @@
 
 .platform .inner .sendEmail label {
     display: block;
+    white-space: normal;
 }
 
 .platform .inner .sendEmail .send {
     cursor: pointer;
 }
 
-.platform .inner .sendEmail .btn-cta .platform .inner .sendEmail label,
+.platform .inner .sendEmail .btn-cta {
+    color: #000;
+}
+
+.platform .inner .sendEmail label,
 .platform .inner>span:first-child {
     text-transform: none;
     text-align: left;
@@ -76,6 +81,11 @@
 
 .hidden {
     display: none;
+}
+
+.custom-cta-cols {
+    max-width: 500px;
+    margin: auto;
 }
 
 

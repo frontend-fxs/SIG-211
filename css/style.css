@@ -2589,6 +2589,14 @@ a.logo:hover {
     padding: 150px 0;
 }
 
+#about.opened {
+    padding-bottom: 430px;
+}
+
+#portfolio.opened {
+    padding-bottom: 370px;
+}
+
 .small-section {
     padding: 0px 0;
 }
