@@ -24,6 +24,10 @@
     padding: 12px 0;
 }
 
+.platform .inner form input {
+    float: left;
+}
+
 .paypal {
     display: block;
     margin: 1rem 0;
