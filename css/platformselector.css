@@ -59,12 +59,12 @@
 
 .thankYou {
     background-color: #338473;
-    text-align: center;
-    width: 100%;
+    text-align: left;
     padding: 1rem;
-    margin: 1rem;
-    display: block;
+    margin: 3rem 0;
     color: white;
+    float: left;
+    clear: both;
 }
 
 .hidden {
