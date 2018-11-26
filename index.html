@@ -60,7 +60,7 @@
                                         <div class="local-scroll">
                                             <a onclick="document.querySelector('#platformHeader').classList.toggle('hidden');" class="btn btn-mod btn-w btn-round btn-large">Get the app </a>
                                         </div>
-                                        <div class="platform  hidden" id="platformHeader">
+                                        <div class="platform header hidden" id="platformHeader">
                                             <div class="inner btn btn-mod btn-w btn-round btn-large">
 
                                                 <span>Select your favorite platform</span>
@@ -144,42 +144,6 @@
                     FXStreet Market Impact Signals
                 </h2>
 
-                <div class="row mb-60">
-                    <div class="col-md-8 col-md-offset-2">
-                        <div class="section-text align-center" onclick="document.querySelector('#platformText').classList.toggle('hidden');">
-                            FXStreet trades calendar news with the Market impact Signals app. If you have a Ctrader account you can have these signals too by downloading the app here (link)
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row mb-60">
-                    <div class="col-md-6 col-md-offset-3 mb-20 align-center wow fadeIn" data-wow-delay="0.2s" data-wow-duration="2s">
-                        <a onclick="document.querySelector('#platformText').classList.toggle('hidden');" class="btn btn-mod btn-round btn-large">Start investing</a>
-                        <div class="platform  hidden" id="platformText">
-                            <div class="inner btn btn-mod btn-round btn-large">
-
-                                <span>Select your favorite platform</span>
-                                <span onclick="showEmailLead('Metatrader','Text')"> Metatrader </span>
-                                <span onclick="showEmailLead('NinjaTrader','Text')"> NinjaTrader </span>
-                                <span onclick="showPaypalLink('Text')"> Ctrader </span>
-
-                                <a id="TextPaypal" class="paypal hidden" href="#">Pay a membership with paypal </a>
-                                <form action="https://docs.google.com/forms/d/e/1FAIpQLSfl76vAsY3SCRe_H2dnPd75y9R0fso2qy4J5RJ22rsdgf8YRg/formResponse" target="hiddenFrame" method="POST" id="TextSendEmail" class="sendEmail hidden" onsubmit="thankYou('Text');">
-                                    <label for="email">Please type your email to contact <span id="TextPlatformName"></span></label>
-                                    <input type="email" class="email" id="email" name="entry.1342467543" value="">
-                                    <input type="hidden" id="TextPlatform" name="entry.3304799" value="">
-                                    <input type="submit" class="fxs_btn fxs_btn_cta">
-                                </form>
-                                <iframe style="display:none" name="hiddenFrame" id="hiddenFrame"></iframe>
-                                <div class="hidden thankYou" id="TextThankYou">
-                                    <span>thank you</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
 
                 <!-- Features Grid -->
                 <div class="row multi-columns-row features-grid">
@@ -215,6 +179,43 @@
                     <!-- End Features Item -->
                 </div>
                 <!-- End Features Grid -->
+
+                <div class="row mb-60">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="section-text align-center">
+                            FXStreet trades calendar news with the Market impact Signals app. If you have a Ctrader account you can have these signals too by downloading the app here (link)
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 mb-20 align-center wow fadeIn" data-wow-delay="0.2s" data-wow-duration="2s">
+                        <a onclick="document.querySelector('#platformText').classList.toggle('hidden');" class="btn btn-mod btn-round btn-large">Start investing</a>
+                        <div class="platform text hidden" id="platformText">
+                            <div class="inner btn btn-mod btn-w btn-round btn-large">
+
+                                <span>Select your favorite platform</span>
+                                <span onclick="showEmailLead('Metatrader','Text')"> Metatrader </span>
+                                <span onclick="showEmailLead('NinjaTrader','Text')"> NinjaTrader </span>
+                                <span onclick="showPaypalLink('Text')"> Ctrader </span>
+
+                                <a id="TextPaypal" class="paypal hidden" href="#">Pay a membership with paypal </a>
+                                <form action="https://docs.google.com/forms/d/e/1FAIpQLSfl76vAsY3SCRe_H2dnPd75y9R0fso2qy4J5RJ22rsdgf8YRg/formResponse" target="hiddenFrame" method="POST" id="TextSendEmail" class="sendEmail hidden" onsubmit="thankYou('Text');">
+                                    <label for="email">Please type your email to contact <span id="TextPlatformName"></span></label>
+                                    <input type="email" class="email" id="email" name="entry.1342467543" value="">
+                                    <input type="hidden" id="TextPlatform" name="entry.3304799" value="">
+                                    <input type="submit" class="fxs_btn fxs_btn_cta">
+                                </form>
+                                <iframe style="display:none" name="hiddenFrame" id="hiddenFrame"></iframe>
+                                <div class="hidden thankYou" id="TextThankYou">
+                                    <span>thank you</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
 
             </div>
         </section>
@@ -487,8 +488,8 @@
 
                     <div class="col-md-6 col-md-offset-3 mb-20 align-center wow fadeIn" data-wow-delay="0.2s" data-wow-duration="2s">
                         <a onclick="document.querySelector('#platformPortfolio').classList.toggle('hidden');" class="btn btn-mod btn-round btn-large">Start investing</a>
-                        <div class="platform  hidden" id="platformPortfolio">
-                            <div class="inner btn btn-mod btn-round btn-large">
+                        <div class="platform portfolio hidden" id="platformPortfolio">
+                            <div class="inner btn btn-mod btn-w btn-round btn-large">
 
                                 <span>Select your favorite platform</span>
                                 <span onclick="showEmailLead('Metatrader','Portfolio')"> Metatrader </span>

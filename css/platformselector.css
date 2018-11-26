@@ -21,6 +21,17 @@
     display: block;
 }
 
+.platform .inner .sendEmail {
+    padding: 1rem 0;
+    clear: both;
+}
+
+.platform .inner .sendEmail .email {}
+
+.platform .inner .sendEmail .send {
+    cursor: pointer;
+}
+
 .platform .inner .sendEmail label,
 .platform .inner>span:first-child {
     text-transform: none;
@@ -29,7 +40,7 @@
     display: block;
 }
 
-.paypal {
+.platform .inner .paypal {
     display: block;
     margin: 1rem 0;
     float: left;
@@ -45,18 +56,7 @@
     background-size: contain;
 }
 
-.sendEmail {
-    padding: 1rem 0;
-    clear: both;
-}
-
-.sendEmail .email {}
-
-.sendEmail .send {
-    cursor: pointer;
-}
-
-.thankYou {
+.platform .inner .thankYou {
     background-color: #338473;
     text-align: center;
     width: 100%;
@@ -70,3 +70,26 @@
 .hidden {
     display: none;
 }
+
+
+/**
+Hola Marina
+Si vols estilar de manera diferent els 3 formularis ho pots fer de la següent manera
+.platform.header 
+.platform.text
+.platform.portfolio
+I a continuació el que vulguis sobreescriure. Per exemple:
+
+.platform.header .inner .paypal {
+    *******
+}
+o
+.platform.text .inner .paypal {
+        *******
+}
+
+o
+.platform.portfolio .inner .paypal {
+    *******
+}
+*/
