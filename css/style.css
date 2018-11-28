@@ -571,6 +571,15 @@ hr.black {
     color: #111;
 }
 
+.background h2 {
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+.background h3 {
+    font-size: 30px;
+}
+
 .dropcap {
     float: left;
     font-size: 3em;
@@ -1155,7 +1164,7 @@ a.btn-mod:focus {
 }
 
 .home-text .background {
-    background-color: #304C70;
+    background-color: rgba(97, 54, 3, 0.9);
     padding-bottom: 40px;
     transition: 0.5s padding ease-out;
 }
