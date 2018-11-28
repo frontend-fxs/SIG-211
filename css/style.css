@@ -723,6 +723,7 @@ a.btn-mod {
     transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
 }
 
+.btn-mod.opened,
 .btn-mod:hover,
 .btn-mod:focus,
 a.btn-mod:hover,
@@ -1153,9 +1154,14 @@ a.btn-mod:focus {
     padding-bottom: 0;
 }
 
-.home-text .orange-background {
-    background-color: rgba(97, 54, 3, 0.9);
-    padding-bottom: 400px;
+.home-text .background {
+    background-color: #304C70;
+    padding-bottom: 40px;
+    transition: 0.5s padding ease-out;
+}
+
+.home-text.opened .background {
+    padding-bottom: 380px;
 }
 
 

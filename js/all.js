@@ -1110,3 +1110,19 @@ var thankYou = function(section) {
         thankyouObj.classList.add('hidden');
     }
 };
+var toggleHomeText = function() {
+    document.querySelector('#platformHeader').classList.toggle('hidden');
+    document.querySelector('#homeText').classList.toggle('opened');
+}
+var toggleText = function() {
+    document.querySelector('#platformText').classList.toggle('hidden');
+    document.querySelector('#about').classList.toggle('opened');
+    document.querySelector('#textCTA').classList.toggle('opened');
+}
+
+var togglePortfolio = function() {
+    document.querySelector('#platformPortfolio').classList.toggle('hidden');
+    document.querySelector('#portfolio').classList.toggle('opened');
+    document.querySelector('#portfolioCTA').classList.toggle('opened');
+
+}

@@ -2,15 +2,25 @@
     margin-top: 20px;
     position: relative;
     width: 100%;
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
 }
 
-.platform .inner {
+.platform .inner,
+.platform .inner:hover {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     z-index: 9999;
     font-weight: 400;
+    color: rgba(255, 255, 255, .85);
+    background: rgba(0, 0, 0, .7);
+}
+
+.platform .inner.btn-w {
+    color: #111;
+    background: #fff;
 }
 
 .platform .inner a {
@@ -82,6 +92,7 @@
 
 .hidden {
     display: none;
+    opacity: 0;
 }
 
 .custom-cta-cols {

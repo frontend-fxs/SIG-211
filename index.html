@@ -42,7 +42,7 @@
 
                 <!-- Hero Content -->
                 <div class="home-content">
-                    <div class="home-text">
+                    <div class="home-text" id="homeText">
 
                         <div class="row">
 
@@ -53,12 +53,12 @@
                                     <h1 class="align-center font-alt">You need all the information possible to make your trading decisions</h1>
 
                                 </div>
-                                <div class="col-md-6 orange-background">
+                                <div class="col-md-6 background">
                                     <div>
                                         <h2>Limited offer!</h2>
                                         <h3>19,99€ one time only</h3>
                                         <div class="local-scroll">
-                                            <a onclick="document.querySelector('#platformHeader').classList.toggle('hidden');" class="btn btn-mod btn-w btn-round btn-large">Get the app </a>
+                                            <a onclick="toggleHomeText();" class="btn btn-mod btn-w btn-round btn-large">Get the app </a>
                                         </div>
                                         <div class="platform hidden" id="platformHeader">
                                             <div class="inner btn btn-w btn-mod btn-round btn-large">
@@ -185,7 +185,7 @@
                 </div>
             </div>
             <div class="custom-cta-cols align-center">
-                <a onclick="document.querySelector('#platformText').classList.toggle('hidden');document.querySelector('#about').classList.toggle('opened');" class="btn btn-mod btn-round btn-large">Get the app!</a>
+                <a onclick="toggleText();" id="textCTA" class="btn btn-mod btn-round btn-large">Get the app!</a>
                 <div class="platform hidden" id="platformText">
                     <div class="inner btn btn-mod btn-round btn-large">
 
@@ -486,7 +486,7 @@
                 </div>
                 <div class="row">
                     <div class="custom-cta-cols align-center" data-wow-delay="0.2s" data-wow-duration="2s">
-                        <a onclick="document.querySelector('#platformPortfolio').classList.toggle('hidden');document.querySelector('#portfolio').classList.toggle('opened');" class="btn btn-mod btn-round btn-large">get the app!</a>
+                        <a onclick="togglePortfolio();" id="portfolioCTA" class="btn btn-mod btn-round btn-large">get the app!</a>
                         <div class="platform hidden" id="platformPortfolio">
                             <div class="inner btn btn-mod btn-round btn-large">
 
