@@ -703,10 +703,10 @@ a.btn-mod {
     box-sizing: border-box;
     padding: 4px 13px;
     color: #fff;
-    background: rgba(34, 34, 34, .9);
+    background: #E4871B;
     border: 2px solid transparent;
     font-size: 11px;
-    font-weight: 400;
+    font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px;
@@ -758,7 +758,7 @@ a.btn-mod:focus {
 .btn-mod.btn-large {
     height: auto;
     padding: 12px 45px;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .btn-mod.btn-glass {
