@@ -727,7 +727,7 @@ a.btn-mod {
 .btn-mod:focus,
 a.btn-mod:hover,
 a.btn-mod:focus {
-    font-weight: 400;
+    font-weight: 700;
     color: rgba(255, 255, 255, .85);
     background: rgba(0, 0, 0, .7);
     text-decoration: none;
@@ -814,12 +814,14 @@ a.btn-mod:focus {
 .btn-mod.btn-w {
     color: #111;
     background: rgba(255, 255, 255, .8);
+    font-weight: 700;
 }
 
 .btn-mod.btn-w:hover,
 .btn-mod.btn-w:focus {
     color: #111;
     background: #fff;
+    font-weight: 700;
 }
 
 .btn-mod.btn-w-color {
