@@ -1148,7 +1148,12 @@ a.btn-mod:focus {
     display: table-cell;
     height: 100%;
     vertical-align: middle;
-    padding-bottom: 300px;
+    padding-bottom: 0;
+}
+
+.home-text .orange-background {
+    background-color: rgba(97, 54, 3, 0.9);
+    padding-bottom: 400px;
 }
 
 
