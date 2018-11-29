@@ -1167,6 +1167,7 @@ a.btn-mod:focus {
     background-color: #304C70;
     padding-bottom: 40px;
     transition: 0.5s padding ease-out;
+        border-radius: 5px;
 }
 
 .home-text.opened .background {
