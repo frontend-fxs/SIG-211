@@ -453,6 +453,13 @@ h6 {
 
 h1 {
     font-size: 35px;
+    padding-top: 50px;
+}
+
+@media (min-width: 992px) {
+    h1 {
+        padding-top: 0;
+    }
 }
 
 h2 {
@@ -1171,8 +1178,14 @@ a.btn-mod:focus {
 }
 
 .home-text.opened .background {
-    padding-bottom: 290px;
+
+    padding-bottom: 400px;
 }
+
+@media (min-width:1200px) {
+    .home-text.opened .background {
+        padding-bottom: 380px;
+    }
 
 
 /* Scroll down icon */
