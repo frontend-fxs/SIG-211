@@ -453,6 +453,13 @@ h6 {
 
 h1 {
     font-size: 35px;
+    padding-top: 50px;
+}
+
+@media (min-width: 992px) {
+    h1 {
+        padding-top: 0;
+    }
 }
 
 h2 {
@@ -1167,11 +1174,17 @@ a.btn-mod:focus {
     background-color: #304C70;
     padding-bottom: 40px;
     transition: 0.5s padding ease-out;
-        border-radius: 5px;
+    border-radius: 5px;
 }
 
 .home-text.opened .background {
-    padding-bottom: 380px;
+    padding-bottom: 400px;
+}
+
+@media (min-width:1200px) {
+    .home-text.opened .background {
+        padding-bottom: 380px;
+    }
 }
 
 
