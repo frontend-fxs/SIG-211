@@ -1179,12 +1179,12 @@ a.btn-mod:focus {
 
 .home-text.opened .background {
 
-    padding-bottom: 400px;
+    padding-bottom: 290px;
 }
 
 @media (min-width:1200px) {
     .home-text.opened .background {
-        padding-bottom: 380px;
+        padding-bottom: 290px;
     }
 
 
