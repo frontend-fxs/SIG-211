@@ -7038,3 +7038,9 @@ only screen and (min-resolution: 120dpi) {
         margin-top: 60px;
     }
 }
+
+@media(min-width:500px) {
+    h1 {
+        margin-top: inherit;
+    }
+}
