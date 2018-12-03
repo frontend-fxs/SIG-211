@@ -28,7 +28,6 @@
                 scrollTop: hash_offset
             });
         };
-        document.write(window.devicePixelRatio);
     });
 
     $(document).ready(function() {
