@@ -28,7 +28,7 @@
                 scrollTop: hash_offset
             });
         }
-        document.write(window.innerWidth);
+        document.write(window.offsetWidth);
     });
 
     $(document).ready(function() {
