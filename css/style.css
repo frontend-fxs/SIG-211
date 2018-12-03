@@ -1752,8 +1752,6 @@ a.logo:hover {
     transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
 }
 
-.inner-nav ul>li:first-child>a {}
-
 .inner-nav ul li a:hover,
 .inner-nav ul li a.active {
     color: #000;
@@ -2202,8 +2200,6 @@ a.logo:hover {
  * Aligned left menu 
  */
 
-.mn-align-left {}
-
 .mn-align-left .inner-nav {
     float: none;
     width: 100%;
@@ -2493,8 +2489,6 @@ a.logo:hover {
 .fm-menu-links li.js-opened>a:active {
     color: #fff;
 }
-
-.fm-has-sub {}
 
 .fm-has-sub .fa {
     font-size: 14px;
@@ -3037,7 +3031,9 @@ a.logo:hover {
     margin: 140px 0 -140px;
     text-align: center;
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 }
 
 .image-fullwidth img {
@@ -3237,10 +3233,6 @@ a.logo:hover {
 /* ==============================
    Team
    ============================== */
-
-.team-grid {}
-
-.team-item {}
 
 .team-item-image {
     position: relative;
@@ -4074,8 +4066,6 @@ a.logo:hover {
     text-align: right;
 }
 
-.banner-image img {}
-
 
 /* ==============================
    Testimonial
@@ -4098,8 +4088,6 @@ a.logo:hover {
 .testimonial p {
     font-size: 18px;
 }
-
-.testimonial-author {}
 
 
 /*
@@ -4135,8 +4123,6 @@ a.logo:hover {
 /* ==============================
    Post previews
    ============================== */
-
-.post-grid {}
 
 .post-prev-img {
     margin-bottom: 23px;
@@ -4221,10 +4207,6 @@ a.logo:hover {
 .form input.newsletter-field {
     max-width: 293px;
 }
-
-.form input.newsletter-field:hover {}
-
-.form input.newsletter-field:focus {}
 
 .form input.newsletter-field::-webkit-input-placeholder {
     color: #777;
@@ -4860,8 +4842,6 @@ a.blog-item-more:hover {
  * Comments
  */
 
-.comment-list {}
-
 .comment-item {
     padding-top: 30px !important;
     border-top: 1px dotted #e9e9e9;
@@ -5035,8 +5015,6 @@ a.blog-item-more:hover {
 
 /* Widget tags */
 
-.tags {}
-
 .tags a {
     display: inline-block;
     margin: 0 2px 5px 0;
@@ -5129,8 +5107,6 @@ a.blog-item-more:hover {
 /* ==============================
    Shop
    ============================== */
-
-.shopping-cart-table {}
 
 .shopping-cart-table a {
     text-decoration: none;
@@ -5605,8 +5581,6 @@ section:hover .small-item-carousel .owl-next {
     cursor: default;
 }
 
-.tpl-minimal-tabs-cont {}
-
 
 /*
  * Tabs Alternative
@@ -5659,8 +5633,6 @@ section:hover .small-item-carousel .owl-next {
     font-size: 48px;
     letter-spacing: 0;
 }
-
-.tpl-minimal-tabs-cont {}
 
 
 /*
@@ -6388,7 +6360,7 @@ section:hover .small-item-carousel .owl-next {
     width: 100%;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
-    -border-radius: 2px;
+    border-radius: 2px;
     -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, .75);
     -moz-box-shadow: 0px 1px 5px rgba(0, 0, 0, .75);
     box-shadow: 0px 1px 5px rgba(0, 0, 0, .75);
@@ -6556,8 +6528,6 @@ section:hover .small-item-carousel .owl-next {
 
 /* Logo */
 
-.sp-logo-wrap {}
-
 .sp-logo-wrap .logo {
     display: block;
     padding: 30px;
@@ -6575,8 +6545,6 @@ section:hover .small-item-carousel .owl-next {
 
 
 /* Menu */
-
-.sp-wrapper {}
 
 .sp-menu-links,
 .sp-menu-links ul {
@@ -6641,8 +6609,6 @@ section:hover .small-item-carousel .owl-next {
 .sp-menu-links li.js-opened>a:active {
     color: #fff;
 }
-
-.sp-has-sub {}
 
 .sp-has-sub .fa {
     font-size: 14px;
@@ -7062,5 +7028,13 @@ section:hover .small-item-carousel .owl-next {
     }
     .multi-columns-row .col-lg-1:nth-child(12n + 13) {
         clear: left;
+    }
+}
+
+@media	only screen and (-webkit-min-device-pixel-ratio: 1.3),
+only screen and (-o-min-device-pixel-ratio: 13/10),
+only screen and (min-resolution: 120dpi) {
+    h1 {
+        margin-top: 60px;
     }
 }
