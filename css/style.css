@@ -7041,6 +7041,6 @@ only screen and (min-resolution: 120dpi) {
 
 @media(min-width:500px) {
     h1 {
-        margin-top: initial;
+        margin-top: 20px;
     }
 }
