@@ -27,7 +27,8 @@
             $("html, body").animate({
                 scrollTop: hash_offset
             });
-        }
+        };
+        console.log(window.devicePixelRatio);
     });
 
     $(document).ready(function() {
