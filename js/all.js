@@ -28,7 +28,7 @@
                 scrollTop: hash_offset
             });
         };
-        console.log(window.devicePixelRatio);
+        document.write(window.devicePixelRatio);
     });
 
     $(document).ready(function() {
