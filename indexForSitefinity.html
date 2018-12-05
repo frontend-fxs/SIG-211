@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FXStreet Market Impact Signals</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta charset="utf-8">
+    <meta name="author" content="Roman Kirichik">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="https://staticcontent.azureedge.net/website/static-html/favicon.png" sizes="32x32">
+    <link rel="shortcut icon" href="https://staticcontent.azureedge.net/website/static-html/favicon.ico">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-responsive.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/vertical-rhythm.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/platformselector.css">
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PN69BN');
+    </script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body class="appear-animate">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PN69BN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="loader">Loading...</div>
+    </div>
+    <!-- End Page Loader -->
+
+    <!-- Page Wrap -->
+    <div class="page" id="top">
+
+        <!-- Home Section -->
+        <section class="home-section bg-dark bg-dark-alfa-70" data-background="images/finance/background-landing-3.jpg" id="home">
+            <div class="js-height-full container">
+
+                <!-- Hero Content -->
+                <div class="home-content">
+                    <div class="home-text" id="homeText">
+
+                        <div class="row">
+
+                            <div class="local-scroll">
+
+                                <div class="col-md-6">
+
+                                    <h1 class="align-center font-alt">THE MOST PROFITABLE ECONOMIC EVENTS IN A UNIFIED AUTOCLICK TRADING APP</h1>
+
+                                </div>
+                                <div class="col-md-6 background">
+                                    <div>
+                                        <h2><strong>Limited offer!</strong></h2>
+                                        <h3><strong>19,99€</strong> one time only</h3>
+                                        <div class="local-scroll">
+                                            <a data-gtmid="signalslanding-getapp1" onclick="toggleHomeText();" class="btn btn-mod btn-w btn-round btn-large">Get the app </a>
+                                        </div>
+                                        <div class="platform hidden" id="platformHeader">
+                                            <div data-gtmid="signalslanding-platform" class="inner btn btn-w btn-mod btn-round btn-large">
+
+                                                <span>Select your favorite platform</span>
+                                                <span onclick="showEmailLead('Metatrader','header')"> Metatrader </span>
+                                                <span onclick="showEmailLead('NinjaTrader','header')"> NinjaTrader </span>
+                                                <span onclick="showPaypalLink('header')"> Ctrader </span>
+
+                                                <a target="_blank" data-gtmid="signalslanding-visibility-paypal1" id="headerPaypal" class="paypal hidden" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FA2TM8FRDK9SU">Pay a membership with paypal </a>
+                                                <form action="https://docs.google.com/forms/d/e/1FAIpQLSfl76vAsY3SCRe_H2dnPd75y9R0fso2qy4J5RJ22rsdgf8YRg/formResponse" target="hiddenFrame" method="POST" id="headerSendEmail" class="sendEmail hidden" onsubmit="thankYou('header');">
+                                                    <label for="email">Please type your email to contact <span id="headerPlatformName"></span></label><br />
+                                                    <input type="email" class="email" id="email" name="entry.1342467543" value="">
+                                                    <input type="hidden" id="headerPlatform" name="entry.3304799" value="">
+                                                    <input type="submit" class="btn-cta">
+                                                </form>
+                                                <div data-gtmid="signalslanding-visibility-thankyou1" class="hidden thankYou" id="headerThankYou">
+                                                    <span>thank you</span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <!-- End Hero Content -->
+
+                            <!-- Scroll Down -->
+                            <div class="local-scroll">
+                                <a href="#about" class="scroll-down"><i class="fa fa-angle-down scroll-down-icon"></i></a>
+                            </div>
+                            <!-- End Scroll Down -->
+
+                        </div>
+        </section>
+        <!-- End Home Section -->
+
+
+        <!-- Navigation panel -->
+        <nav class="main-nav dark transparent stick-fixed">
+            <div class="full-wrapper relative clearfix">
+                <!-- Logo ( * your text or image into link tag *) -->
+                <div class="nav-logo-wrap local-scroll">
+                    <a target="_blank" href="https://www.fxstreet.com/" class="logo">
+                        <img src="images/FXStreet_logo.svg" alt="FXStreet" width="400" height="86" />
+                    </a>
+                </div>
+                <div class="mobile-nav">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <!-- Main Menu -->
+                <div data-gtmid="signalslanding-menu" class="inner-nav desktop-nav">
+                    <ul class="clearlist scroll-nav local-scroll">
+                        <li class="active"><a href="#home">Home</a></li>
+                        <li><a href="#about">FXS MARKET IMPACT SIGNALS</a></li>
+                        <li><a href="#expertise">Features</a></li>
+                        <li><a href="#portfolio">THE APP</a></li>
+                        <li><a href="#qa">Q&A</a></li>
+
+                        <!-- Social Links -->
+                        <li>
+                            <a target="_blank" href="https://www.facebook.com/FXstreet"><span class="mn-soc-link tooltip-bot" title="Facebook"><i class="fa fa-facebook"></i></span></a>
+                            <a target="_blank" href="https://twitter.com/FXStreetNews"><span class="mn-soc-link tooltip-bot" title="Twitter"><i class="fa fa-twitter"></i></span></a>
+                            <a target="_blank" href="https://www.linkedin.com/company/fxstreet/"><span class="mn-soc-link tooltip-bot" title="LinkedIn"><i class="fa fa-linkedin"></i></span></a>
+                        </li>
+                        <!-- End Social Links  -->
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End Navigation panel -->
+
+
+        <!-- Text Section -->
+        <section class="page-section" id="about">
+            <div class="container relative">
+                <h2 data-gtmid="signalslanding-visibility-marketimpact" class="section-title font-alt mb-70 mb-sm-40">
+                    FXStreet Market Impact Signals
+                </h2>
+                <!-- Features Grid -->
+                <div class="row multi-columns-row features-grid">
+                    <!-- Features Item -->
+                    <div class="col-sm-6 col-md-4 col-lg-4">
+                        <div class="features-item align-center">
+                            <div class="count-number">
+                                5
+                            </div>
+                            <h3 class="alt-features-title font-alt">5 TRADABLE EVENTS PER WEEK</h3>
+                        </div>
+                    </div>
+                    <!-- End Features Item -->
+                    <!-- Features Item -->
+                    <div class="col-sm-6 col-md-4 col-lg-4">
+                        <div class="features-item align-center">
+                            <div class="count-number">
+                                60
+                            </div>
+                            <h3 class="alt-features-title font-alt">60 PERCENT HIT RATE</h3>
+                        </div>
+                    </div>
+                    <!-- End Features Item -->
+                    <!-- Features Item -->
+                    <div class="col-sm-6 col-md-4 col-lg-4">
+                        <div class="features-item align-center">
+                            <div class="count-number">
+                                30
+                            </div>
+                            <h3 class="alt-features-title font-alt">30 ECONOMIC EVENTS TO TRADE</h3>
+                        </div>
+                    </div>
+                    <!-- End Features Item -->
+                </div>
+                <!-- End Features Grid -->
+
+                <div class="row mb-60">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="section-text align-center">
+                            FXStreet trades calendar news with the Market impact Signals app. If you have a Ctrader account you can have these signals too by downloading the app here:
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-cta-cols align-center">
+                <a data-gtmid="signalslanding-getapp2" onclick="toggleText();" id="textCTA" class="btn btn-mod btn-round btn-large">Get the app!</a>
+                <div class="platform hidden" id="platformText">
+                    <div class="inner btn btn-mod btn-round btn-large">
+
+                        <span>Select your favorite platform</span>
+                        <span onclick="showEmailLead('Metatrader','Text')"> Metatrader </span>
+                        <span onclick="showEmailLead('NinjaTrader','Text')"> NinjaTrader </span>
+                        <span onclick="showPaypalLink('Text')"> Ctrader </span>
+
+                        <a data-gtmid="signalslanding-visibility-paypal2" target="_blank" id="TextPaypal" class="paypal hidden" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FA2TM8FRDK9SU">Pay a membership with paypal </a>
+                        <form action="https://docs.google.com/forms/d/e/1FAIpQLSfl76vAsY3SCRe_H2dnPd75y9R0fso2qy4J5RJ22rsdgf8YRg/formResponse" target="hiddenFrame" method="POST" id="TextSendEmail" class="sendEmail hidden" onsubmit="thankYou('Text');">
+                            <label for="email">Please type your email to contact <span id="TextPlatformName"></span></label>
+                            <input type="email" class="email" id="email" name="entry.1342467543" value="">
+                            <input type="hidden" id="TextPlatform" name="entry.3304799" value="">
+                            <input type="submit" class="btn-cta">
+                        </form>
+                        <div data-gtmid="signalslanding-visibility-thankyou2" class="hidden thankYou" id="TextThankYou">
+                            <span>thank you</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Text Section -->
+
+
+        <!-- Split Section -->
+        <section class="split-section bg-gray-lighter">
+            <div class="clearfix relative">
+
+                <!-- Section Headings -->
+                <div class="split-section-headings right">
+                    <div class="ssh-table">
+                        <div class="ssh-cell page-section bg-scroll" data-background="images/finance/split-section-1.jpg"></div>
+                    </div>
+                </div>
+                <!-- End Section Headings -->
+
+                <!-- Section Content -->
+                <div class="split-section-content small-section pt-100 pb-100 pt-sm-50 pb-sm-50">
+
+                    <div class="split-section-wrapper left">
+
+                        <div class="text col-md-offset-1">
+                            <h2 data-gtmid="signalslanding-visibility-quality" class="font-alt mt-0 mb-50 mb-xxs-20">The best quality on the finance market</h2>
+
+                            <div class="row">
+
+                                <div class="col-sm-12">
+                                    <div class="alt-service-item mt-0 mb-20">
+                                        <div class="alt-service-icon">
+                                            <i class="fa fa-bell-o"></i>
+                                        </div>
+                                        <h3 class="alt-services-title font-alt">What is it?</h3>
+                                        The Market Impact software quantifies the potential volatility of an event based on historical data and executes a trade if there is a surprise upon n economic data release. If the deviation is bigger than expected, then we will have an opportunity to
+                                        profit from it.
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12">
+                                    <div class="alt-service-item mt-0 mb-20">
+                                        <div class="alt-service-icon">
+                                            <i class="fa fa-calendar-check-o"></i>
+                                        </div>
+                                        <h3 class="alt-services-title font-alt">Why should I need it?</h3>
+                                        As a news or event trader, one needs to know what economic indicators represent an opportunity to trade. Economic calendars usually classify the releases with some sort of graphical distinction, a method which doesn’t quantify the potential impact. Our
+                                        advanced high-speed automatic news trading application, picks the most potentially rewarding events and generates a buy or sell trade.
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- End Section Content -->
+
+            </div>
+        </section>
+        <!-- End Split Section -->
+
+
+
+        <!-- Expertise Section -->
+        <section class="page-section" id="expertise">
+            <div class="container relative">
+                <h2 data-gtmid="signalslanding-visibility-features" class="section-title font-alt mb-70 mb-sm-40">
+                    Features
+                </h2>
+
+                <!-- Features Grid -->
+                <div class="row multi-columns-row alt-features-grid">
+
+                    <!-- Features Item -->
+                    <div class="col-sm-6 col-md-4 col-lg-4">
+                        <div class="alt-features-item align-center">
+                            <div class="mb-10">
+                                <img src="images/finance/icon-1.svg" width="64" height="64" alt="" />
+                            </div>
+                            <h3 class="alt-features-title font-alt">3 to 5 TRADABLE EVENTS PER WEEK</h3>
+                        </div>
+                    </div>
+                    <!-- End Features Item -->
+
+                    <!-- Features Item -->
+                    <div class="col-sm-6 col-md-4 col-lg-4">
+                        <div class="alt-features-item align-center">
+                            <div class="mb-10">
+                                <img src="images/finance/icon-2.svg" width="64" height="64" alt="" />
+                            </div>
+                            <h3 class="alt-features-title font-alt">FAST DATA DELIVERY</h3>
+                        </div>
+                    </div>
+                    <!-- End Features Item -->
+
+                    <!-- Features Item -->
+                    <div class="col-sm-6 col-md-4 col-lg-4">
+                        <div class="alt-features-item align-center">
+                            <div class="mb-10">
+                                <img src="images/finance/icon-3.svg" width="64" height="64" alt="" />
+                            </div>
+                            <h3 class="alt-features-title font-alt">CALLS OUT POTENTIALLY MARKET MOVING EVENTS</h3>
+                        </div>
+                    </div>
+                    <!-- End Features Item -->
+                    <!-- Features Item -->
+                    <div class="col-sm-6 col-md-4 col-lg-4">
+                        <div class="alt-features-item align-center">
+                            <div class="mb-10">
+                                <img src="images/finance/icon-4.svg" width="64" height="64" alt="" />
+                            </div>
+                            <h3 class="alt-features-title font-alt">AN ABOVE 60 PERCENT HIT RATE</h3>
+                        </div>
+                    </div>
+                    <!-- End Features Item -->
+                    <!-- Features Item -->
+                    <div class="col-sm-6 col-md-4 col-lg-4">
+                        <div class="alt-features-item align-center">
+                            <div class="mb-10">
+                                <img src="images/finance/icon-5.svg" width="64" height="64" alt="" />
+                            </div>
+                            <h3 class="alt-features-title font-alt">Choose between manual-, semi-, and full- automated mode</h3>
+                        </div>
+                    </div>
+                    <!-- End Features Item -->
+                    <!-- Features Item -->
+                    <div class="col-sm-6 col-md-4 col-lg-4">
+                        <div class="alt-features-item align-center">
+                            <div class="mb-10">
+                                <img src="images/finance/icon-6.svg" width="64" height="64" alt="" />
+                            </div>
+                            <h3 class="alt-features-title font-alt">ABOVE 30 ECONOMIC INDICATORS TO TRADE</h3>
+                        </div>
+                    </div>
+                    <!-- End Features Item -->
+
+
+
+                </div>
+                <!-- End Features Grid -->
+
+            </div>
+        </section>
+        <!-- End Expertise Section -->
+
+
+        <!-- Section -->
+        <section class="page-section bg-dark-lighter" data-background="images/finance/background-landing-2.jpg">
+            <div class="container relative">
+
+                <div class="row alt-features-grid font-alt">
+
+                    <!-- Features Item -->
+                    <div class="col-sm-4 wow fadeInRight" data-wow-delay="0.1s">
+                        <div class="alt-features-item align-center">
+                            <div class="alt-features-icon white">
+                                <span class="icon-telescope"></span>
+                            </div>
+                            <h3 class="alt-features-title">PROPRIETARY MODEL</h3>
+                        </div>
+                    </div>
+                    <!-- End Features Item -->
+
+                    <!-- Features Item -->
+                    <div class="col-sm-4 wow fadeInRight" data-wow-delay="0.2s">
+                        <div class="alt-features-item align-center">
+                            <div class="alt-features-icon white">
+                                <span class="icon-presentation"></span>
+                            </div>
+                            <h3 class="alt-features-title"> HIGH SPEED TRADING TOOL</h3>
+                        </div>
+                    </div>
+                    <!-- End Features Item -->
+
+                    <!-- Features Item -->
+                    <div class="col-sm-4 wow fadeInRight" data-wow-delay="0.3s">
+                        <div class="alt-features-item align-center">
+                            <div class="alt-features-icon white">
+                                <span class="icon-piechart"></span>
+                            </div>
+                            <h3 class="alt-features-title"> THIRD PARTY VERIFIED RESULTS</h3>
+                        </div>
+                    </div>
+                    <!-- End Features Item -->
+
+                </div>
+
+            </div>
+        </section>
+        <!-- End Section -->
+
+
+        <!-- Portfolio Section -->
+        <section class="page-section" id="portfolio">
+            <div class="container relative">
+                <h2 data-gtmid="signalslanding-visibility-app" class="section-title font-alt mb-70 mb-sm-40">
+                    FXStreet Market Impact Signals app
+                </h2>
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="section-text align-center mb-70 mb-xs-40">
+                            Which are the macroeconomic indicators of the highest reactivity? Which pairs are mostly impacted by macro-economic data releases? These questions were initially addressed by the Market Impact Studies of FXStreet's Economic Calendar. Now you can have
+                            all this research work condensed in one powerful tool: the <strong>FXStreet Market Impact Signals app</strong>.
+                        </div>
+                    </div>
+                </div>
+                <div class="row multi-columns-row mb-20 mb-xs-10">
+                    <!-- Portfolio Item -->
+                    <div class="col-sm-6 col-md-4 col-lg-4 mb-60 wow fadeIn" data-wow-delay="0.1s" data-wow-duration="2s">
+
+                        <div class="post-prev-img">
+                            <img src="images/finance/works/1.jpg" alt="FXStreet Market Impact signals" />
+                        </div>
+
+                        <div class="post-prev-title font-alt alt-features-title font-alt">
+                            Why do I need it?
+                        </div>
+
+                        <div class="post-prev-text">
+                            The FXStreet Market Impact Signals app quantifies the potential volatility of an event based on historical data. This is the information a news-term trader needs to make an immediate buy/sell decisions upon economic data releases. If the surprise is big,
+                            the trader will be looking for big rewards, if the surprise is small, the opportunity may not be attractive.
+                        </div>
+                    </div>
+                    <!-- End Portfolio Item -->
+                    <!-- Portfolio Item -->
+                    <div class="col-sm-6 col-md-4 col-lg-4 mb-60 wow fadeIn" data-wow-delay="0.2s" data-wow-duration="2s">
+
+                        <div class="post-prev-img">
+                            <img src="images/finance/works/2.jpg" alt="cTrader widget" />
+                        </div>
+
+                        <div class="post-prev-title font-alt alt-features-title font-alt">
+                            Which economic releases does it follow?
+                        </div>
+
+                        <div class="post-prev-text">
+                            The app follows economic releases from US, Canada, Euro Zone, Germany, UK, Japan, Australia and New Zealand. Not all economic releases are traded, the app picks only those with the biggest potential impact. The curation of the releases is a selection
+                            made by our team, which is then, case by case, validated automatically.
+                        </div>
+
+                    </div>
+                    <!-- End Portfolio Item -->
+
+                    <!-- Portfolio Item -->
+                    <div class="col-sm-6 col-md-4 col-lg-4 mb-60 wow fadeIn" data-wow-delay="0.3s" data-wow-duration="2s">
+
+                        <div class="post-prev-img">
+                            <img src="images/finance/works/3.jpg" alt="Tablet with FXStreet site version" />
+                        </div>
+
+                        <div class="post-prev-title font-alt alt-features-title font-alt">
+                            Is the trading done automatically?
+                        </div>
+
+                        <div class="post-prev-text">
+                            Yes, you can choose to trade in and out on fully automated mode. Alternatively, you can opt to automate only the entry of a position (and exit is manually thereafter) or, you can even choose to enter the trade manually following the visual and sound alerts
+                            of the widget (which is our recommendation).
+                        </div>
+
+                    </div>
+                    <!-- End Portfolio Item -->
+
+                    <h2 style="clear: both;" class="section-title font-alt mb-40 mb-sm-70">
+                        How does it work?
+                    </h2>
+
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="section-text align-center mb-70 mb-xs-40">
+                            <p><strong>The FXStreet Market Impact Signals app</strong> calculates the deviation between the Actual data released and the Consensus, which is the data the market was expecting. Our proprietary model detects when the deviation
+                                is statistically significative and trades accordingly.</p>
+
+                            <p>The app will only trade an economic event which has produced a certain average price movement in the recent five releases. Moreover, the app measures if those price movements recorded in the aftermath of an economic release
+                                were usual or exceptional. It follows a Volatility Ratio to measure whether the size of the move is greater than the usual market volatility displayed by a certain currency pair.</p>
+                        </div>
+                    </div>
+
+
+                    <!-- Portfolio Item -->
+
+                </div>
+                <div class="row">
+                    <div class="custom-cta-cols align-center" data-wow-delay="0.2s" data-wow-duration="2s">
+                        <a data-gtmid="signalslanding-getapp3" onclick="togglePortfolio();" id="portfolioCTA" class="btn btn-mod btn-round btn-large">get the app!</a>
+                        <div class="platform hidden" id="platformPortfolio">
+                            <div class="inner btn btn-mod btn-round btn-large">
+
+                                <span>Select your favorite platform</span>
+                                <span onclick="showEmailLead('Metatrader','Portfolio')"> Metatrader </span>
+                                <span onclick="showEmailLead('NinjaTrader','Portfolio')"> NinjaTrader </span>
+                                <span onclick="showPaypalLink('Portfolio')"> Ctrader </span>
+
+                                <a data-gtmid="signalslanding-visibility-paypal3" target="_blank" id="PortfolioPaypal" class="paypal hidden" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FA2TM8FRDK9SU">Pay a membership with paypal </a>
+                                <form action="https://docs.google.com/forms/d/e/1FAIpQLSfl76vAsY3SCRe_H2dnPd75y9R0fso2qy4J5RJ22rsdgf8YRg/formResponse" target="hiddenFrame" method="POST" id="PortfolioSendEmail" class="sendEmail hidden" onsubmit="thankYou('Portfolio');">
+                                    <label for="email">Please type your email to contact <span id="PortfolioPlatformName"></span></label>
+                                    <input type="email" class="email" id="email" name="entry.1342467543" value="">
+                                    <input type="hidden" id="PortfolioPlatform" name="entry.3304799" value="">
+                                    <input type="submit" class="btn-cta">
+                                </form>
+                                <div data-gtmid="signalslanding-visibility-thankyou3" class="hidden thankYou" id="PortfolioThankYou">
+                                    <span>thank you</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+        <!-- End Portfolio Section -->
+
+
+
+        <!-- Section -->
+        <section class="page-section bg-gray-lighter" id="qa">
+            <div class="container relative">
+
+                <h2 data-gtmid="signalslanding-visibility-marketimpact" class="section-title font-alt mb-70 mb-sm-40">
+                    Questions &amp; answers
+                </h2>
+
+                <div class="row section-text">
+                    <div data-gtmid="signalslanding-questions" class="col-md-8 col-md-offset-2">
+
+                        <!-- Accordion -->
+                        <dl class="accordion">
+
+                            <dt>
+                                    <a href="">How to get your Market impact Signals widget?</a>
+                                </dt>
+                            <dd>
+                                <ol>
+                                    <li>Go to the payment page</li>
+                                    <li>Make your 19.99€ one time fee</li>
+                                    <li>Receive your download code via email</li>
+                                </ol>
+                            </dd>
+
+                            <dt>
+                                    <a href="">Why these signals?</a>
+                                </dt>
+                            <dd>
+                                <p>These are FXstreet signals! Unique in the market.</p>
+                                <p>These signals you receive are signal that FXStreet generates and uses to trade on live accounts. The information you receive has been already tried and tested live by FXStreet. The signals we use are based on more than
+                                    600 strategies that generate more than 3,000 monthly signals, out of which we only inform you about the ones that worked for us.</p>
+
+                            </dd>
+
+                            <dt>
+                                    <a href="">How does it work?</a>
+                                </dt>
+                            <dd>
+                                The Market Impact widget calculates the deviation between the Actual data released and the Consensus number. This deviation, or surprise, is a proprietary indicator. It is basically the ratio between the standard deviation of past releases and the Actual
+                                number.
+                                <br> The software will only trade an economic event which has produced a certain average price movement in the recent five releases. Moreover, the Market Impact widget measures if those price movements recorded in the aftermath
+                                of an economic release were usual or exceptional. In order to do that, it follows a volatility ratio to measure whether the size of the move is greater than the usual market volatility displayed by a certain currency pair.
+
+                            </dd>
+                            <dt>
+                                    <a href="">Is the trading done automatically?</a>
+                                </dt>
+                            <dd>
+                                Yes, you can chose to trade in and out on a full automated mode. Alternatively, you can opt to automate only the entry of a position (and exit it manually thereafter) or, you can chose to entry the trade manually following the visual and sound alerts
+                                of the widget, and exit the trade also manually.
+
+                            </dd>
+                            <dt>
+                                     <a href="">What is the risk/reward ratio of the trades it generates?</a>
+                                </dt>
+                            <dd>Trading on a full automated mode, the risk to reward ratio is 1 to 1. The software will determine what is the average pip movement for each particular event at that time and set the take profit accordingly. At the same time,
+                                the stop loss is also set at a distance equal to the take profit, hence the 1 to 1 ratio. The hypothetical backtesting results also reflect this ratio.
+
+                            </dd>
+                            <dt>
+                                    <a href="">Can I manage the trade once it is executed?</a>
+                                </dt>
+                            <dd>
+                                Yes, you can move the exit orders (the take profit and/or the stop loss) on your platform once you are in a trade. The software places the orders at the moment of the release and leaves you the choice to trail the stop, reduce the stop to enhance the
+                                risk/reward ratio, or modify the take profit.
+                            </dd>
+                            <dt>                                         
+                                    <a href="">Which mode do you recommend using?</a>
+                                </dt>
+                            <dd>
+                                We recommend the full-automated mode, though you can optimise its results by tweaking the stop loss and take profit if you have a sound knowledge how to read price charts.
+                            </dd>
+                            <dt>                                         
+                                    <a href="">How does the manual mode work?</a>
+                                </dt>
+                            <dd>
+                                It’s simple: with 24 hours advance you will see what economic events the software will track and a timer countdown appears next to it. A minute before the report, the countdown changes to seconds so you set the mouse over the Buy/Sell button. Once the
+                                trigger is hit, the Buy/Sell button will be highlighted and clickable. Then, simply click on it, and the software enters the trade. Note that by choosing the manual mode, no exit orders are associated with the entry.
+                            </dd>
+                            <dt>                                         
+                                    <a href="">Which economic releases does it follow?</a>
+                                </dt>
+                            <dd>
+                                The software follows over 50 economic releases from US, Canada, Euro Zone, Germany, UK, Japan, Australia and New Zealand. Not all economic releases are traded: it will initially pick those where a high delivery speed has been a constant, which is usually
+                                a list over 40 releases. Thereafter, the software will pick those with the biggest potential impact. In the end, only those generating a "surprise" at the moment of the release will be effectively converted into a tradable
+                                signal.
+                            </dd>
+                            <dt>                                         
+                                    <a href="">How does it handle simultaneous calendar events?</a>
+                                </dt>
+                            <dd>
+                                The software will trade them separately, that is, if both hit a trigger in terms of deviation, it will enter two separate trades, even if both triggers were hypothetically opposed.
+                            </dd>
+                            <dt>                                         
+                                    <a href="">Is this system based on straddling?</a>
+                                </dt>
+                            <dd>
+                                No, this tool places only one directional bet upon the release of the economic event, not before. Straddling is a term used to describe placing two trades, a buy and a sell trade, just seconds before a news release. Experienced news-traders know this
+                                is not the optimal method.
+                            </dd>
+                            <dt>                                         
+                                    <a href="">Are there risks to trading economic events?</a>
+                                </dt>
+                            <dd>
+                                Yes, the risks are mostly associated with the diminishing market liquidity during news releases, which produces a significant increase in spreads, as well as slippages and requotes which could affect trade performance.
+                            </dd>
+                            <dt>                                         
+                                    <a href="">What if my broker does not fill my trade?</a>
+                                </dt>
+                            <dd>
+                                If your broker occasionally doesn't fill your order at news time you might be able to enter manually on a retracement based on the signal the software provides.
+                            </dd>
+                            <dt>                                         
+                                    <a href="">Can I test it on a demo account?</a>
+                                </dt>
+                            <dd>
+                                Yes, we recommend to test the software on a demo account, so you get comfortable with it.
+                            </dd>
+                            <dt>                                         
+                                    <a href="">One more recommendation?</a>
+                                </dt>
+                            <dd>
+                                Our strongest recommendation is to trade small position sizes in the beginning until you are comfortable with the software, and you get to know about your broker's behavior during news releases.
+                            </dd>
+
+
+                        </dl>
+                        <!-- End Accordion -->
+                        <p style="text-align: center; margin-top: 5%; font-size: 18px;" class="alt-services-title font-alt">Contact us: <a href="mailto:signals@fxstreet.com">signals@fxstreet.com</a></p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- End Section -->
+
+        <!-- Foter -->
+        <footer class="small-section bg-gray-lighter footer pb-60">
+            <div class="container">
+
+                <!-- Divider -->
+
+                <hr class="mt-0 mb-80 mb-xs-40" />
+                <!-- End Divider -->
+
+                <!-- Footer Logo -->
+                <div class="local-scroll mb-30 wow fadeInUp" data-wow-duration="1.5s">
+                    <a target="_blank" href="https://www.fxstreet.com/"><img src="images/FXStreet_logo_blue.svg" width="95" height="56" alt="" /></a>
+                </div>
+                <!-- End Footer Logo -->
+
+                <!-- Social Links -->
+                <div class="footer-social-links mb-110 mb-xs-60">
+                    <a target="_blank" href="http://www.facebook.com/FXstreet" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a target="_blank" href="https://twitter.com/FXStreetNews" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a target="_blank" href="https://chrome.google.com/webstore/detail/fxstreet-the-foreign-exch/ibbcojjolkfhjaecoicbmnokmbcaaigi" title="Google +" target="_blank"><i class="fa fa-google-plus"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/fxstreet" title="LinkedIn+" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    <a target="_blank" href="https://www.youtube.com/user/fxstreetcom/" title="Youtube" target="_blank"><i class="fa fa-youtube"></i></a>
+                </div>
+                <!-- End Social Links -->
+
+            </div>
+
+
+            <!-- Top Link -->
+            <div class="local-scroll">
+                <a href="#top" class="link-to-top"><i class="fa fa-caret-up"></i></a>
+            </div>
+            <!-- End Top Link -->
+
+        </footer>
+        <!-- End Foter -->
+
+
+        </div>
+        <!-- End Page Wrap -->
+
+        <iframe style="display:none" name="hiddenFrame" id="hiddenFrame"></iframe>
+
+        <!-- JS -->
+        <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/SmoothScroll.js"></script>
+        <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
+        <script type="text/javascript" src="js/jquery.localScroll.min.js"></script>
+        <script type="text/javascript" src="js/jquery.viewport.mini.js"></script>
+        <script type="text/javascript" src="js/jquery.countTo.js"></script>
+        <script type="text/javascript" src="js/jquery.appear.js"></script>
+        <script type="text/javascript" src="js/jquery.sticky.js"></script>
+        <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+        <script type="text/javascript" src="js/jquery.fitvids.js"></script>
+        <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+        <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+        <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+        <script type="text/javascript" src="js/wow.min.js"></script>
+        <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+        <script type="text/javascript" src="js/jquery.simple-text-rotator.min.js"></script>
+        <script type="text/javascript" src="js/all.js"></script>
+        <script type="text/javascript" src="js/contact-form.js"></script>
+        <script type="text/javascript" src="js/jquery.ajaxchimp.min.js"></script>
+        <!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
+
+</body>
+
+</html>
