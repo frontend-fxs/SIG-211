@@ -18,6 +18,11 @@
     background: rgba(0, 0, 0, .7);
 }
 
+.platform .inner input,
+.platform .inner:hover input {
+    color: #111;
+}
+
 .platform .inner.btn-w {
     color: #111;
     background: #fff;
