@@ -89,16 +89,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                 <span onclick="showPaypalLink('header')"> Ctrader </span>
 
                                                 <a target="_blank" data-gtmid="signalslanding-visibility-paypal1" id="headerPaypal" class="paypal hidden" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FA2TM8FRDK9SU">Pay a membership with paypal </a>
-                                                <form action="https://docs.google.com/forms/d/e/1FAIpQLSfl76vAsY3SCRe_H2dnPd75y9R0fso2qy4J5RJ22rsdgf8YRg/formResponse" method="POST" id="headerSendEmail" class="sendEmail hidden" onsubmit="thankYou('header');">
-                                                    <label for="email">Please type your email to contact <span id="headerPlatformName"></span></label><br />
-                                                    <input type="email" class="email" id="email" name="entry.1342467543" value="">
-                                                    <input type="hidden" id="headerPlatform" name="entry.3304799" value="">
+                                                <form action="https://docs.google.com/forms/d/e/1FAIpQLSfl76vAsY3SCRe_H2dnPd75y9R0fso2qy4J5RJ22rsdgf8YRg/formResponse" method="POST" id="headerSendEmail" class="sendEmail hidden" target="headerIframe" onsubmit="thankYou('header');">
+                                                    <label for="headerEmail">Please type your email to contact <span id="headerPlatformName"></span></label><br />
+                                                    <input type="email" class="email" id="headerEmail" name="entry.1342467543" onkeypress="updateFrom('headerEmail')">
+                                                    <input type="hidden" id="headerPlatform" name="entry.3304799">
                                                     <input type="submit" class="btn-cta">
                                                 </form>
                                                 <div data-gtmid="signalslanding-visibility-thankyou1" class="hidden thankYou" id="headerThankYou">
                                                     <span>thank you</span>
                                                 </div>
-
+                                                <iframe style="display:none;" id="headerIframe"></iframe>
                                             </div>
                                         </div>
                                     </div>
@@ -215,15 +215,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <span onclick="showPaypalLink('Text')"> Ctrader </span>
 
                         <a data-gtmid="signalslanding-visibility-paypal2" target="_blank" id="TextPaypal" class="paypal hidden" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FA2TM8FRDK9SU">Pay a membership with paypal </a>
-                        <form action="https://docs.google.com/forms/d/e/1FAIpQLSfl76vAsY3SCRe_H2dnPd75y9R0fso2qy4J5RJ22rsdgf8YRg/formResponse" method="POST" id="TextSendEmail" class="sendEmail hidden" onsubmit="thankYou('Text');">
-                            <label for="email">Please type your email to contact <span id="TextPlatformName"></span></label>
-                            <input type="email" class="email" id="email" name="entry.1342467543" value="">
-                            <input type="hidden" id="TextPlatform" name="entry.3304799" value="">
+                        <form action="https://docs.google.com/forms/d/e/1FAIpQLSfl76vAsY3SCRe_H2dnPd75y9R0fso2qy4J5RJ22rsdgf8YRg/formResponse" method="POST" id="TextSendEmail" class="sendEmail hidden" target="textIframe" onsubmit="thankYou('Text');">
+                            <label for="Textemail">Please type your email to contact <span id="TextPlatformName"></span></label>
+                            <input type="email" class="email" id="Textemail" name="entry.1342467543" onkeypress="updateFrom('Textemail')">
+                            <input type="hidden" id="TextPlatform" name="entry.3304799">
                             <input type="submit" class="btn-cta">
                         </form>
                         <div data-gtmid="signalslanding-visibility-thankyou2" class="hidden thankYou" id="TextThankYou">
                             <span>thank you</span>
                         </div>
+                        <iframe style="display:none;" id="textIframe"></iframe>
                     </div>
                 </div>
             </div>
@@ -518,15 +519,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <span onclick="showPaypalLink('Portfolio')"> Ctrader </span>
 
                                 <a data-gtmid="signalslanding-visibility-paypal3" target="_blank" id="PortfolioPaypal" class="paypal hidden" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FA2TM8FRDK9SU">Pay a membership with paypal </a>
-                                <form action="https://docs.google.com/forms/d/e/1FAIpQLSfl76vAsY3SCRe_H2dnPd75y9R0fso2qy4J5RJ22rsdgf8YRg/formResponse" method="POST" id="PortfolioSendEmail" class="sendEmail hidden" onsubmit="thankYou('Portfolio');">
-                                    <label for="email">Please type your email to contact <span id="PortfolioPlatformName"></span></label>
-                                    <input type="email" class="email" id="email" name="entry.1342467543" value="">
-                                    <input type="hidden" id="PortfolioPlatform" name="entry.3304799" value="">
+                                <form action="https://docs.google.com/forms/d/e/1FAIpQLSfl76vAsY3SCRe_H2dnPd75y9R0fso2qy4J5RJ22rsdgf8YRg/formResponse" method="POST" id="PortfolioSendEmail" class="sendEmail hidden" target="portfolioIframe" onsubmit="thankYou('Portfolio');">
+                                    <label for="portfolioEmail">Please type your email to contact <span id="PortfolioPlatformName"></span></label>
+                                    <input type="email" class="email" id="portfolioEmail" name="entry.1342467543" onkeypress="updateFrom('portfolioEmail')">
+                                    <input type="hidden" id="PortfolioPlatform" name="entry.3304799">
                                     <input type="submit" class="btn-cta">
                                 </form>
                                 <div data-gtmid="signalslanding-visibility-thankyou3" class="hidden thankYou" id="PortfolioThankYou">
                                     <span>thank you</span>
                                 </div>
+                                <iframe style="display:none;" id="portfolioIframe"></iframe>
                             </div>
                         </div>
                     </div>
