@@ -36,13 +36,17 @@
     color: #111;
 }
 
-.platform .inner>span {
-    padding: 12px 0;
-    width: 100%;
-    display: block;
-}
-
-.platform .inner .sendEmail {
+    .platform .inner > span, 
+    .platform .inner > a {
+        padding: 12px 0;
+        width: 100%;
+        display: block;
+    }
+    .platform .inner > a > span{
+        text-decoration:none;
+        margin-left:2rem;
+    }
+    .platform .inner .sendEmail {
     padding: 1rem 0;
     clear: both;
 }
@@ -66,22 +70,6 @@
     text-align: left;
     width: 100%;
     display: block;
-}
-
-.platform .inner .paypal {
-    display: block;
-    margin: 1rem 0;
-    float: left;
-    clear: both;
-    width: 100%;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    padding-right: 50px;
-    background-image: url(https://fidoalliance.org/wp-content/uploads/paypal_2014_logo_detail.png);
-    background-repeat: no-repeat;
-    background-position: 100% 50%;
-    background-size: contain;
 }
 
 .platform .inner .thankYou {

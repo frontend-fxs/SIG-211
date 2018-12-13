@@ -1088,17 +1088,17 @@ function split_height_init() {
 
 /* Platform selector functions */
 var showEmailLead = function(platformName, section) {
-    document.querySelector('#' + section + 'Paypal').classList.add('hidden');
+    document.querySelector('#' + section + 'Payment').classList.add('hidden');
     document.querySelector('#' + section + 'ThankYou').classList.add('hidden');
     document.querySelector('#' + section + 'SendEmail').classList.remove('hidden');
     document.querySelector('#' + section + 'Platform').value = platformName;
     document.querySelector('#' + section + 'PlatformName').innerHTML = platformName;
 
 };
-var showPaypalLink = function(section) {
+var showPaymentLink = function(section) {
     document.querySelector('#' + section + 'ThankYou').classList.add('hidden');
     document.querySelector('#' + section + 'SendEmail').classList.add('hidden');
-    document.querySelector('#' + section + 'Paypal').classList.remove('hidden');
+    document.querySelector('#' + section + 'Payment').classList.remove('hidden');
 };
 
 var thankYou = function(section) {

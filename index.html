@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
@@ -13,6 +13,7 @@
     <!-- Favicons -->
     <link rel="icon" type="image/png" href="https://staticcontent.azureedge.net/website/static-html/favicon.png" sizes="32x32">
     <link rel="shortcut icon" href="https://staticcontent.azureedge.net/website/static-html/favicon.ico">
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -22,6 +23,10 @@
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/platformselector.css">
+
+
+
+
     <!-- Google Tag Manager -->
     <script>
         (function(w, d, s, l, i) {
@@ -44,20 +49,21 @@
 
 <body class="appear-animate">
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PN69BN"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PN69BN"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
     <!-- End Google Tag Manager (noscript) -->
     <!-- Page Loader -->
     <div class="page-loader">
         <div class="loader">Loading...</div>
     </div>
     <!-- End Page Loader -->
-
     <!-- Page Wrap -->
     <div class="page" id="top">
 
         <!-- Home Section -->
-        <section class="home-section bg-dark bg-dark-alfa-70" data-background="images/finance/background-landing-3.jpg" id="home">
+        <section class="home-section bg-dark bg-dark-alfa-70" data-background="https://editorial.blob.core.windows.net/landingpages/signals/finance/background-landing-3.jpg" id="home">
             <div class="js-height-full container">
 
                 <!-- Hero Content -->
@@ -86,9 +92,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                 <span>Select your favorite platform</span>
                                                 <span onclick="showEmailLead('Metatrader','header')"> Metatrader </span>
                                                 <span onclick="showEmailLead('NinjaTrader','header')"> NinjaTrader </span>
-                                                <span onclick="showPaypalLink('header')"> Ctrader </span>
+                                                <span onclick="showPaymentLink('header')"> Ctrader </span>
 
-                                                <a target="_blank" data-gtmid="signalslanding-visibility-paypal1" id="headerPaypal" class="paypal hidden" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FA2TM8FRDK9SU">Pay a membership with paypal </a>
+                                                <a target="_blank" data-gtmid="signalslanding-visibility-payment1" id="headerPayment" class="payment hidden" href="https://www.fxstreet.com/signals">PROCEED TO PAYMENT<span class="fa fa-credit-card" aria-hidden="true"></span></a>
                                                 <form action="https://docs.google.com/forms/d/e/1FAIpQLSfl76vAsY3SCRe_H2dnPd75y9R0fso2qy4J5RJ22rsdgf8YRg/formResponse" method="POST" id="headerSendEmail" class="sendEmail hidden" target="headerIframe" onsubmit="thankYou('header');">
                                                     <label for="headerEmail">Please type your email to contact <span id="headerPlatformName"></span></label><br />
                                                     <input type="email" class="email" id="headerEmail" name="entry.1342467543" onkeypress="updateFrom('headerEmail')">
@@ -107,7 +113,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                             </div>
                             <!-- End Hero Content -->
-
                             <!-- Scroll Down -->
                             <div class="local-scroll">
                                 <a href="#about" class="scroll-down"><i class="fa fa-angle-down scroll-down-icon"></i></a>
@@ -117,15 +122,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </div>
         </section>
         <!-- End Home Section -->
-
-
         <!-- Navigation panel -->
         <nav class="main-nav dark transparent stick-fixed">
             <div class="full-wrapper relative clearfix">
                 <!-- Logo ( * your text or image into link tag *) -->
                 <div class="nav-logo-wrap local-scroll">
                     <a target="_blank" href="https://www.fxstreet.com/" class="logo">
-                        <img src="images/FXStreet_logo.svg" alt="FXStreet" width="400" height="86" />
+                        <img src="https://editorial.blob.core.windows.net/landingpages/signals/FXStreet_logo.svg" alt="FXStreet" width="400" height="86" />
                     </a>
                 </div>
                 <div class="mobile-nav">
@@ -153,8 +156,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </nav>
         <!-- End Navigation panel -->
-
-
         <!-- Text Section -->
         <section class="page-section" id="about">
             <div class="container relative">
@@ -212,9 +213,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <span>Select your favorite platform</span>
                         <span onclick="showEmailLead('Metatrader','Text')"> Metatrader </span>
                         <span onclick="showEmailLead('NinjaTrader','Text')"> NinjaTrader </span>
-                        <span onclick="showPaypalLink('Text')"> Ctrader </span>
+                        <span onclick="showPaymentLink('Text')"> Ctrader </span>
 
-                        <a data-gtmid="signalslanding-visibility-paypal2" target="_blank" id="TextPaypal" class="paypal hidden" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FA2TM8FRDK9SU">Pay a membership with paypal </a>
+                        <a target="_blank" data-gtmid="signalslanding-visibility-payment2" id="TextPayment" class="payment hidden" href="https://www.fxstreet.com/signals">PROCEED TO PAYMENT<span class="fa fa-credit-card" aria-hidden="true"></span></a>
                         <form action="https://docs.google.com/forms/d/e/1FAIpQLSfl76vAsY3SCRe_H2dnPd75y9R0fso2qy4J5RJ22rsdgf8YRg/formResponse" method="POST" id="TextSendEmail" class="sendEmail hidden" target="textIframe" onsubmit="thankYou('Text');">
                             <label for="Textemail">Please type your email to contact <span id="TextPlatformName"></span></label>
                             <input type="email" class="email" id="Textemail" name="entry.1342467543" onkeypress="updateFrom('Textemail')">
@@ -230,8 +231,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </section>
         <!-- End Text Section -->
-
-
         <!-- Split Section -->
         <section class="split-section bg-gray-lighter">
             <div class="clearfix relative">
@@ -239,11 +238,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <!-- Section Headings -->
                 <div class="split-section-headings right">
                     <div class="ssh-table">
-                        <div class="ssh-cell page-section bg-scroll" data-background="images/finance/split-section-1.jpg"></div>
+                        <div class="ssh-cell page-section bg-scroll" data-background="https://editorial.blob.core.windows.net/landingpages/signals/finance/split-section-1.jpg"></div>
                     </div>
                 </div>
                 <!-- End Section Headings -->
-
                 <!-- Section Content -->
                 <div class="split-section-content small-section pt-100 pb-100 pt-sm-50 pb-sm-50">
 
@@ -287,9 +285,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </section>
         <!-- End Split Section -->
-
-
-
         <!-- Expertise Section -->
         <section class="page-section" id="expertise">
             <div class="container relative">
@@ -304,29 +299,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="col-sm-6 col-md-4 col-lg-4">
                         <div class="alt-features-item align-center">
                             <div class="mb-10">
-                                <img src="images/finance/icon-1.svg" width="64" height="64" alt="" />
+                                <img src="https://editorial.blob.core.windows.net/landingpages/signals/finance/icon-1.svg" width="64" height="64" alt="" />
                             </div>
                             <h3 class="alt-features-title font-alt">3 to 5 TRADABLE EVENTS PER WEEK</h3>
                         </div>
                     </div>
                     <!-- End Features Item -->
-
                     <!-- Features Item -->
                     <div class="col-sm-6 col-md-4 col-lg-4">
                         <div class="alt-features-item align-center">
                             <div class="mb-10">
-                                <img src="images/finance/icon-2.svg" width="64" height="64" alt="" />
+                                <img src="https://editorial.blob.core.windows.net/landingpages/signals/finance/icon-2.svg" width="64" height="64" alt="" />
                             </div>
                             <h3 class="alt-features-title font-alt">FAST DATA DELIVERY</h3>
                         </div>
                     </div>
                     <!-- End Features Item -->
-
                     <!-- Features Item -->
                     <div class="col-sm-6 col-md-4 col-lg-4">
                         <div class="alt-features-item align-center">
                             <div class="mb-10">
-                                <img src="images/finance/icon-3.svg" width="64" height="64" alt="" />
+                                <img src="https://editorial.blob.core.windows.net/landingpages/signals/finance/icon-3.svg" width="64" height="64" alt="" />
                             </div>
                             <h3 class="alt-features-title font-alt">CALLS OUT POTENTIALLY MARKET MOVING EVENTS</h3>
                         </div>
@@ -336,7 +329,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="col-sm-6 col-md-4 col-lg-4">
                         <div class="alt-features-item align-center">
                             <div class="mb-10">
-                                <img src="images/finance/icon-4.svg" width="64" height="64" alt="" />
+                                <img src="https://editorial.blob.core.windows.net/landingpages/signals/finance/icon-4.svg" width="64" height="64" alt="" />
                             </div>
                             <h3 class="alt-features-title font-alt">AN ABOVE 60 PERCENT HIT RATE</h3>
                         </div>
@@ -346,7 +339,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="col-sm-6 col-md-4 col-lg-4">
                         <div class="alt-features-item align-center">
                             <div class="mb-10">
-                                <img src="images/finance/icon-5.svg" width="64" height="64" alt="" />
+                                <img src="https://editorial.blob.core.windows.net/landingpages/signals/finance/icon-5.svg" width="64" height="64" alt="" />
                             </div>
                             <h3 class="alt-features-title font-alt">Choose between manual-, semi-, and full- automated mode</h3>
                         </div>
@@ -356,7 +349,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="col-sm-6 col-md-4 col-lg-4">
                         <div class="alt-features-item align-center">
                             <div class="mb-10">
-                                <img src="images/finance/icon-6.svg" width="64" height="64" alt="" />
+                                <img src="https://editorial.blob.core.windows.net/landingpages/signals/finance/icon-6.svg" width="64" height="64" alt="" />
                             </div>
                             <h3 class="alt-features-title font-alt">ABOVE 30 ECONOMIC INDICATORS TO TRADE</h3>
                         </div>
@@ -371,10 +364,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </section>
         <!-- End Expertise Section -->
-
-
         <!-- Section -->
-        <section class="page-section bg-dark-lighter" data-background="images/finance/background-landing-2.jpg">
+        <section class="page-section bg-dark-lighter" data-background="https://editorial.blob.core.windows.net/landingpages/signals/finance/background-landing-2.jpg">
             <div class="container relative">
 
                 <div class="row alt-features-grid font-alt">
@@ -389,7 +380,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </div>
                     </div>
                     <!-- End Features Item -->
-
                     <!-- Features Item -->
                     <div class="col-sm-4 wow fadeInRight" data-wow-delay="0.2s">
                         <div class="alt-features-item align-center">
@@ -400,7 +390,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </div>
                     </div>
                     <!-- End Features Item -->
-
                     <!-- Features Item -->
                     <div class="col-sm-4 wow fadeInRight" data-wow-delay="0.3s">
                         <div class="alt-features-item align-center">
@@ -417,8 +406,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </section>
         <!-- End Section -->
-
-
         <!-- Portfolio Section -->
         <section class="page-section" id="portfolio">
             <div class="container relative">
@@ -438,7 +425,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="col-sm-6 col-md-4 col-lg-4 mb-60 wow fadeIn" data-wow-delay="0.1s" data-wow-duration="2s">
 
                         <div class="post-prev-img">
-                            <img src="images/finance/works/1.jpg" alt="FXStreet Market Impact signals" />
+                            <img src="https://editorial.blob.core.windows.net/landingpages/signals/finance/works/1.jpg" alt="FXStreet Market Impact signals" />
                         </div>
 
                         <div class="post-prev-title font-alt alt-features-title font-alt">
@@ -455,7 +442,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="col-sm-6 col-md-4 col-lg-4 mb-60 wow fadeIn" data-wow-delay="0.2s" data-wow-duration="2s">
 
                         <div class="post-prev-img">
-                            <img src="images/finance/works/2.jpg" alt="cTrader widget" />
+                            <img src="https://editorial.blob.core.windows.net/landingpages/signals/finance/works/2.jpg" alt="cTrader widget" />
                         </div>
 
                         <div class="post-prev-title font-alt alt-features-title font-alt">
@@ -469,12 +456,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                     </div>
                     <!-- End Portfolio Item -->
-
                     <!-- Portfolio Item -->
                     <div class="col-sm-6 col-md-4 col-lg-4 mb-60 wow fadeIn" data-wow-delay="0.3s" data-wow-duration="2s">
 
                         <div class="post-prev-img">
-                            <img src="images/finance/works/3.jpg" alt="Tablet with FXStreet site version" />
+                            <img src="https://editorial.blob.core.windows.net/landingpages/signals/finance/works/3.jpg" alt="Tablet with FXStreet site version" />
                         </div>
 
                         <div class="post-prev-title font-alt alt-features-title font-alt">
@@ -495,11 +481,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                     <div class="col-md-10 col-md-offset-1">
                         <div class="section-text align-center mb-70 mb-xs-40">
-                            <p><strong>The FXStreet Market Impact Signals app</strong> calculates the deviation between the Actual data released and the Consensus, which is the data the market was expecting. Our proprietary model detects when the deviation
-                                is statistically significative and trades accordingly.</p>
+                            <p>
+                                <strong>The FXStreet Market Impact Signals app</strong> calculates the deviation between the Actual data released and the Consensus, which is the data the market was expecting. Our proprietary model detects when the deviation
+                                is statistically significative and trades accordingly.
+                            </p>
 
-                            <p>The app will only trade an economic event which has produced a certain average price movement in the recent five releases. Moreover, the app measures if those price movements recorded in the aftermath of an economic release
-                                were usual or exceptional. It follows a Volatility Ratio to measure whether the size of the move is greater than the usual market volatility displayed by a certain currency pair.</p>
+                            <p>
+                                The app will only trade an economic event which has produced a certain average price movement in the recent five releases. Moreover, the app measures if those price movements recorded in the aftermath of an economic release were usual or exceptional.
+                                It follows a Volatility Ratio to measure whether the size of the move is greater than the usual market volatility displayed by a certain currency pair.
+                            </p>
                         </div>
                     </div>
 
@@ -516,9 +506,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <span>Select your favorite platform</span>
                                 <span onclick="showEmailLead('Metatrader','Portfolio')"> Metatrader </span>
                                 <span onclick="showEmailLead('NinjaTrader','Portfolio')"> NinjaTrader </span>
-                                <span onclick="showPaypalLink('Portfolio')"> Ctrader </span>
+                                <span onclick="showPaymentLink('Portfolio')"> Ctrader </span>
 
-                                <a data-gtmid="signalslanding-visibility-paypal3" target="_blank" id="PortfolioPaypal" class="paypal hidden" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FA2TM8FRDK9SU">Pay a membership with paypal </a>
+                                <a target="_blank" data-gtmid="signalslanding-visibility-payment3" id="PortfolioPayment" class="payment hidden" href="https://www.fxstreet.com/signals">PROCEED TO PAYMENT<span class="fa fa-credit-card" aria-hidden="true"></span></a>
                                 <form action="https://docs.google.com/forms/d/e/1FAIpQLSfl76vAsY3SCRe_H2dnPd75y9R0fso2qy4J5RJ22rsdgf8YRg/formResponse" method="POST" id="PortfolioSendEmail" class="sendEmail hidden" target="portfolioIframe" onsubmit="thankYou('Portfolio');">
                                     <label for="portfolioEmail">Please type your email to contact <span id="PortfolioPlatformName"></span></label>
                                     <input type="email" class="email" id="portfolioEmail" name="entry.1342467543" onkeypress="updateFrom('portfolioEmail')">
@@ -536,9 +526,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         </section>
         <!-- End Portfolio Section -->
-
-
-
         <!-- Section -->
         <section class="page-section bg-gray-lighter" id="qa">
             <div class="container relative">
@@ -554,8 +541,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <dl class="accordion">
 
                             <dt>
-                                    <a href="">How to get your Market impact Signals widget?</a>
-                                </dt>
+                                <a href="">How to get your Market impact Signals widget?</a>
+                            </dt>
                             <dd>
                                 <ol>
                                     <li>Go to the payment page</li>
@@ -565,18 +552,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </dd>
 
                             <dt>
-                                    <a href="">Why these signals?</a>
-                                </dt>
+                                <a href="">Why these signals?</a>
+                            </dt>
                             <dd>
                                 <p>These are FXstreet signals! Unique in the market.</p>
-                                <p>These signals you receive are signal that FXStreet generates and uses to trade on live accounts. The information you receive has been already tried and tested live by FXStreet. The signals we use are based on more than
-                                    600 strategies that generate more than 3,000 monthly signals, out of which we only inform you about the ones that worked for us.</p>
+                                <p>
+                                    These signals you receive are signal that FXStreet generates and uses to trade on live accounts. The information you receive has been already tried and tested live by FXStreet. The signals we use are based on more than 600 strategies that generate more
+                                    than 3,000 monthly signals, out of which we only inform you about the ones that worked for us.
+                                </p>
 
                             </dd>
 
                             <dt>
-                                    <a href="">How does it work?</a>
-                                </dt>
+                                <a href="">How does it work?</a>
+                            </dt>
                             <dd>
                                 The Market Impact widget calculates the deviation between the Actual data released and the Consensus number. This deviation, or surprise, is a proprietary indicator. It is basically the ratio between the standard deviation of past releases and the Actual
                                 number.
@@ -585,82 +574,83 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                             </dd>
                             <dt>
-                                    <a href="">Is the trading done automatically?</a>
-                                </dt>
+                                <a href="">Is the trading done automatically?</a>
+                            </dt>
                             <dd>
                                 Yes, you can chose to trade in and out on a full automated mode. Alternatively, you can opt to automate only the entry of a position (and exit it manually thereafter) or, you can chose to entry the trade manually following the visual and sound alerts
                                 of the widget, and exit the trade also manually.
 
                             </dd>
                             <dt>
-                                     <a href="">What is the risk/reward ratio of the trades it generates?</a>
-                                </dt>
-                            <dd>Trading on a full automated mode, the risk to reward ratio is 1 to 1. The software will determine what is the average pip movement for each particular event at that time and set the take profit accordingly. At the same time,
-                                the stop loss is also set at a distance equal to the take profit, hence the 1 to 1 ratio. The hypothetical backtesting results also reflect this ratio.
+                                <a href="">What is the risk/reward ratio of the trades it generates?</a>
+                            </dt>
+                            <dd>
+                                Trading on a full automated mode, the risk to reward ratio is 1 to 1. The software will determine what is the average pip movement for each particular event at that time and set the take profit accordingly. At the same time, the stop loss is also set
+                                at a distance equal to the take profit, hence the 1 to 1 ratio. The hypothetical backtesting results also reflect this ratio.
 
                             </dd>
                             <dt>
-                                    <a href="">Can I manage the trade once it is executed?</a>
-                                </dt>
+                                <a href="">Can I manage the trade once it is executed?</a>
+                            </dt>
                             <dd>
                                 Yes, you can move the exit orders (the take profit and/or the stop loss) on your platform once you are in a trade. The software places the orders at the moment of the release and leaves you the choice to trail the stop, reduce the stop to enhance the
                                 risk/reward ratio, or modify the take profit.
                             </dd>
-                            <dt>                                         
-                                    <a href="">Which mode do you recommend using?</a>
-                                </dt>
+                            <dt>
+                                <a href="">Which mode do you recommend using?</a>
+                            </dt>
                             <dd>
                                 We recommend the full-automated mode, though you can optimise its results by tweaking the stop loss and take profit if you have a sound knowledge how to read price charts.
                             </dd>
-                            <dt>                                         
-                                    <a href="">How does the manual mode work?</a>
-                                </dt>
+                            <dt>
+                                <a href="">How does the manual mode work?</a>
+                            </dt>
                             <dd>
                                 It’s simple: with 24 hours advance you will see what economic events the software will track and a timer countdown appears next to it. A minute before the report, the countdown changes to seconds so you set the mouse over the Buy/Sell button. Once the
                                 trigger is hit, the Buy/Sell button will be highlighted and clickable. Then, simply click on it, and the software enters the trade. Note that by choosing the manual mode, no exit orders are associated with the entry.
                             </dd>
-                            <dt>                                         
-                                    <a href="">Which economic releases does it follow?</a>
-                                </dt>
+                            <dt>
+                                <a href="">Which economic releases does it follow?</a>
+                            </dt>
                             <dd>
                                 The software follows over 50 economic releases from US, Canada, Euro Zone, Germany, UK, Japan, Australia and New Zealand. Not all economic releases are traded: it will initially pick those where a high delivery speed has been a constant, which is usually
                                 a list over 40 releases. Thereafter, the software will pick those with the biggest potential impact. In the end, only those generating a "surprise" at the moment of the release will be effectively converted into a tradable
                                 signal.
                             </dd>
-                            <dt>                                         
-                                    <a href="">How does it handle simultaneous calendar events?</a>
-                                </dt>
+                            <dt>
+                                <a href="">How does it handle simultaneous calendar events?</a>
+                            </dt>
                             <dd>
                                 The software will trade them separately, that is, if both hit a trigger in terms of deviation, it will enter two separate trades, even if both triggers were hypothetically opposed.
                             </dd>
-                            <dt>                                         
-                                    <a href="">Is this system based on straddling?</a>
-                                </dt>
+                            <dt>
+                                <a href="">Is this system based on straddling?</a>
+                            </dt>
                             <dd>
                                 No, this tool places only one directional bet upon the release of the economic event, not before. Straddling is a term used to describe placing two trades, a buy and a sell trade, just seconds before a news release. Experienced news-traders know this
                                 is not the optimal method.
                             </dd>
-                            <dt>                                         
-                                    <a href="">Are there risks to trading economic events?</a>
-                                </dt>
+                            <dt>
+                                <a href="">Are there risks to trading economic events?</a>
+                            </dt>
                             <dd>
                                 Yes, the risks are mostly associated with the diminishing market liquidity during news releases, which produces a significant increase in spreads, as well as slippages and requotes which could affect trade performance.
                             </dd>
-                            <dt>                                         
-                                    <a href="">What if my broker does not fill my trade?</a>
-                                </dt>
+                            <dt>
+                                <a href="">What if my broker does not fill my trade?</a>
+                            </dt>
                             <dd>
                                 If your broker occasionally doesn't fill your order at news time you might be able to enter manually on a retracement based on the signal the software provides.
                             </dd>
-                            <dt>                                         
-                                    <a href="">Can I test it on a demo account?</a>
-                                </dt>
+                            <dt>
+                                <a href="">Can I test it on a demo account?</a>
+                            </dt>
                             <dd>
                                 Yes, we recommend to test the software on a demo account, so you get comfortable with it.
                             </dd>
-                            <dt>                                         
-                                    <a href="">One more recommendation?</a>
-                                </dt>
+                            <dt>
+                                <a href="">One more recommendation?</a>
+                            </dt>
                             <dd>
                                 Our strongest recommendation is to trade small position sizes in the beginning until you are comfortable with the software, and you get to know about your broker's behavior during news releases.
                             </dd>
@@ -675,7 +665,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </section>
         <!-- End Section -->
-
         <!-- Foter -->
         <footer class="small-section bg-gray-lighter footer pb-60">
             <div class="container">
@@ -684,13 +673,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 <hr class="mt-0 mb-80 mb-xs-40" />
                 <!-- End Divider -->
-
                 <!-- Footer Logo -->
                 <div class="local-scroll mb-30 wow fadeInUp" data-wow-duration="1.5s">
-                    <a target="_blank" href="https://www.fxstreet.com/"><img src="images/FXStreet_logo_blue.svg" width="95" height="56" alt="" /></a>
+                    <a target="_blank" href="https://www.fxstreet.com/"><img src="https://editorial.blob.core.windows.net/landingpages/signals/FXStreet_logo_blue.svg" width="95" height="56" alt="" /></a>
                 </div>
                 <!-- End Footer Logo -->
-
                 <!-- Social Links -->
                 <div class="footer-social-links mb-110 mb-xs-60">
                     <a target="_blank" href="http://www.facebook.com/FXstreet" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
@@ -720,7 +707,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <iframe style="display:none" name="hiddenFrame" id="hiddenFrame"></iframe>
 
         <!-- JS -->
-        <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js" integrity="sha256-Ls0pXSlb7AYs7evhd+VLnWsZ/AqEHcXBeMZUycz/CcA=" crossorigin="anonymous"></script>
         <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/SmoothScroll.js"></script>
@@ -742,6 +729,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <script type="text/javascript" src="js/all.js"></script>
         <script type="text/javascript" src="js/contact-form.js"></script>
         <script type="text/javascript" src="js/jquery.ajaxchimp.min.js"></script>
+
+
         <!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
 
 </body>
