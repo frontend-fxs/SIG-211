@@ -33,20 +33,34 @@
 }
 
 .platform .inner.btn-w a {
-    color: #111;
+    color: #fff;
 }
 
-    .platform .inner > span, 
-    .platform .inner > a {
-        padding: 12px 0;
-        width: 100%;
-        display: block;
-    }
-    .platform .inner > a > span{
-        text-decoration:none;
-        margin-left:2rem;
-    }
-    .platform .inner .sendEmail {
+.platform .inner>span:nth-child(2),
+.platform .inner>span:nth-child(3),
+.platform .inner>span:nth-child(4) {
+    text-decoration: underline;
+}
+
+.platform .inner>span,
+.platform .inner>a {
+    padding: 12px 0;
+    width: 100%;
+    display: block;
+}
+
+.platform .inner>a {
+    background-color: #e4871b;
+    color: white;
+    font-weight: 700;
+}
+
+.platform .inner>a>span {
+    text-decoration: none;
+    margin-left: 2rem;
+}
+
+.platform .inner .sendEmail {
     padding: 1rem 0;
     clear: both;
 }
