@@ -1177,7 +1177,19 @@ a.btn-mod:focus {
 }
 
 .home-text.opened .background {
-    padding-bottom: 290px;
+    padding-bottom: 225px;
+}
+
+.home-text.opened .background.emailShowed {
+    padding-bottom: 398px;
+}
+
+.home-text.opened .background.thankyouShowed {
+    padding-bottom: 456px;
+}
+
+.home-text.opened .background.paymentShowed {
+    padding-bottom: 270px;
 }
 
 
