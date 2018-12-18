@@ -42,6 +42,12 @@
     text-decoration: underline;
 }
 
+.platform .inner>span:nth-child(2):hover,
+.platform .inner>span:nth-child(3):hover,
+.platform .inner>span:nth-child(4):hover {
+    text-decoration: none;
+}
+
 .platform .inner>span,
 .platform .inner>a {
     padding: 12px 0;
