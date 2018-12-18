@@ -70,6 +70,28 @@
     white-space: normal;
 }
 
+.platform .inner .sendEmail label input[type="checkbox"] {
+    margin-bottom: 5rem;
+    float: left;
+    margin-right: 1rem;
+}
+
+.platform .inner .sendEmail label span.terms {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 15px;
+}
+
+.platform .inner .sendEmail label span.terms a {
+    color: #e4871b;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.platform .inner .sendEmail label span.terms a:hover {
+    text-decoration: underline;
+}
+
 .platform .inner .sendEmail .send {
     cursor: pointer;
 }
