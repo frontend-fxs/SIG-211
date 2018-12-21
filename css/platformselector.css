@@ -46,6 +46,12 @@
     text-decoration: none;
 }
 
+.platform .inner>span.active {
+    text-decoration: none;
+    font-weight: bold;
+    color: #E4871B;
+}
+
 .platform .inner>span,
 .platform .inner>a {
     padding: 12px 0;

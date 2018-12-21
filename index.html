@@ -15,14 +15,14 @@
     <link rel="shortcut icon" href="https://staticcontent.azureedge.net/website/static-html/favicon.ico">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css?t=201812141200">
-    <link rel="stylesheet" href="css/style.css?t=201812141200">
-    <link rel="stylesheet" href="css/style-responsive.css?t=201812141200">
-    <link rel="stylesheet" href="css/animate.min.css?t=201812141200">
-    <link rel="stylesheet" href="css/vertical-rhythm.min.css?t=201812141200">
-    <link rel="stylesheet" href="css/owl.carousel.css?t=201812141200">
-    <link rel="stylesheet" href="css/magnific-popup.css?t=201812141200">
-    <link rel="stylesheet" href="css/platformselector.css?t=201812141200">
+    <link rel="stylesheet" href="css/bootstrap.min.css?t=201812181248">
+    <link rel="stylesheet" href="css/style.css?t=201812181248">
+    <link rel="stylesheet" href="css/style-responsive.css?t=201812181248">
+    <link rel="stylesheet" href="css/animate.min.css?t=201812181248">
+    <link rel="stylesheet" href="css/vertical-rhythm.min.css?t=201812181248">
+    <link rel="stylesheet" href="css/owl.carousel.css?t=201812181248">
+    <link rel="stylesheet" href="css/magnific-popup.css?t=201812181248">
+    <link rel="stylesheet" href="css/platformselector.css?t=201812181248">
 
 
     <!-- Google Tag Manager -->
@@ -88,9 +88,9 @@
                                             <div data-gtmid="signalslanding-platform" class="inner btn btn-w btn-mod btn-round btn-large">
 
                                                 <span>Select your favorite platform</span>
-                                                <span onclick="showEmailLead('Metatrader','header')"> Metatrader </span>
-                                                <span onclick="showEmailLead('NinjaTrader','header')"> NinjaTrader </span>
-                                                <span onclick="showPaymentLink('header')"> Ctrader </span>
+                                                <span onclick="showEmailLead('Metatrader','header')" id="headerMetatraderTrigger"> Metatrader </span>
+                                                <span onclick="showEmailLead('NinjaTrader','header')" id="headerNinjaTraderTrigger"> NinjaTrader </span>
+                                                <span onclick="showPaymentLink('header')" id="headerCtraderTrigger"> Ctrader </span>
 
                                                 <a target="_blank" data-gtmid="signalslanding-visibility-payment1" id="headerPayment" class="payment hidden" href="https://www.fxstreet.com/signals/download">PROCEED TO PAYMENT<span class="fa fa-credit-card" aria-hidden="true"></span></a>
                                                 <form action="https://docs.google.com/forms/d/e/1FAIpQLSfl76vAsY3SCRe_H2dnPd75y9R0fso2qy4J5RJ22rsdgf8YRg/formResponse" method="POST" id="headerSendEmail" class="sendEmail hidden" target="headerIframe" onsubmit="thankYou('header');">
@@ -99,7 +99,7 @@
                                                     <input type="hidden" id="headerPlatform" name="entry.3304799">
                                                     <label>
                                                         <input type="checkbox" required />
-                                                        <span class="terms">I have read and I accept <a href="/info/terms-conditions" class="fxs_signup_conditions" title="">FXStreet terms and conditions</a>. Your personal information is confidential and not disclosed to any third parties.</span>
+                                                        <span class="terms">I have read and I accept <a  target="_blank"  href="/info/terms-conditions" class="fxs_signup_conditions" title="">FXStreet terms and conditions</a>. Your personal information is confidential and not disclosed to any third parties.</span>
                                                     </label>
                                                     <input type="submit" class="btn-cta">
                                                 </form>
@@ -224,7 +224,7 @@
                             <input type="hidden" id="TextPlatform" name="entry.3304799">
                             <label>
                                 <input type="checkbox" required />
-                                <span class="terms">I have read and I accept <a href="/info/terms-conditions" class="fxs_signup_conditions" title="">FXStreet terms and conditions</a>. Your personal information is confidential and not disclosed to any third parties.</span>
+                                <span class="terms">I have read and I accept <a  target="_blank" href="/info/terms-conditions" class="fxs_signup_conditions" title="">FXStreet terms and conditions</a>. Your personal information is confidential and not disclosed to any third parties.</span>
                             </label>
                             <input type="submit" class="btn-cta">
                         </form>
@@ -521,7 +521,7 @@
                                     <input type="hidden" id="PortfolioPlatform" name="entry.3304799">
                                     <label>
                                         <input type="checkbox" required />
-                                        <span class="terms">I have read and I accept <a href="/info/terms-conditions" class="fxs_signup_conditions" title="">FXStreet terms and conditions</a>. Your personal information is confidential and not disclosed to any third parties.</span>
+                                        <span class="terms">I have read and I accept <a target="_blank"  href="/info/terms-conditions" class="fxs_signup_conditions" title="">FXStreet terms and conditions</a>. Your personal information is confidential and not disclosed to any third parties.</span>
                                     </label>
                                     <input type="submit" class="btn-cta">
                                 </form>
@@ -690,11 +690,11 @@
                 <!-- End Footer Logo -->
                 <!-- Social Links -->
                 <div class="footer-social-links mb-110 mb-xs-60">
-                    <a target="_blank" href="http://www.facebook.com/FXstreet" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
-                    <a target="_blank" href="https://twitter.com/FXStreetNews" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a target="_blank" href="http://www.facebook.com/FXstreet" title="Facebook"><i class="fa fa-facebook"></i></a>
+                    <a target="_blank" href="https://twitter.com/FXStreetNews" title="Twitter"><i class="fa fa-twitter"></i></a>
                     <a target="_blank" href="https://chrome.google.com/webstore/detail/fxstreet-the-foreign-exch/ibbcojjolkfhjaecoicbmnokmbcaaigi" title="Google +" target="_blank"><i class="fa fa-google-plus"></i></a>
-                    <a target="_blank" href="https://www.linkedin.com/company/fxstreet" title="LinkedIn+" target="_blank"><i class="fa fa-linkedin"></i></a>
-                    <a target="_blank" href="https://www.youtube.com/user/fxstreetcom/" title="Youtube" target="_blank"><i class="fa fa-youtube"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/fxstreet" title="LinkedIn+"><i class="fa fa-linkedin"></i></a>
+                    <a target="_blank" href="https://www.youtube.com/user/fxstreetcom/" title="Youtube"><i class="fa fa-youtube"></i></a>
                 </div>
                 <!-- End Social Links -->
 
@@ -716,30 +716,30 @@
 
         <!-- JS -->
         <script src="https://code.jquery.com/jquery-1.11.2.min.js" integrity="sha256-Ls0pXSlb7AYs7evhd+VLnWsZ/AqEHcXBeMZUycz/CcA=" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="js/jquery.easing.1.3.js?t=201812141200"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js?t=201812141200"></script>
-        <script type="text/javascript" src="js/SmoothScroll.js?t=201812141200"></script>
-        <script type="text/javascript" src="js/jquery.scrollTo.min.js?t=201812141200"></script>
-        <script type="text/javascript" src="js/jquery.localScroll.min.js?t=201812141200"></script>
-        <script type="text/javascript" src="js/jquery.viewport.mini.js?t=201812141200"></script>
-        <script type="text/javascript" src="js/jquery.countTo.js?t=201812141200"></script>
-        <script type="text/javascript" src="js/jquery.appear.js?t=201812141200"></script>
-        <script type="text/javascript" src="js/jquery.sticky.js?t=201812141200"></script>
-        <script type="text/javascript" src="js/jquery.parallax-1.1.3.js?t=201812141200"></script>
-        <script type="text/javascript" src="js/jquery.fitvids.js?t=201812141200"></script>
-        <script type="text/javascript" src="js/owl.carousel.min.js?t=201812141200"></script>
-        <script type="text/javascript" src="js/isotope.pkgd.min.js?t=201812141200"></script>
-        <script type="text/javascript" src="js/imagesloaded.pkgd.min.js?t=201812141200"></script>
-        <script type="text/javascript" src="js/jquery.magnific-popup.min.js?t=201812141200"></script>
-        <script type="text/javascript" src="js/wow.min.js?t=201812141200"></script>
-        <script type="text/javascript" src="js/masonry.pkgd.min.js?t=201812141200"></script>
-        <script type="text/javascript" src="js/jquery.simple-text-rotator.min.js?t=201812141200"></script>
-        <script type="text/javascript" src="js/all.js?t=201812141200"></script>
-        <script type="text/javascript" src="js/contact-form.js?t=201812141200"></script>
-        <script type="text/javascript" src="js/jquery.ajaxchimp.min.js?t=201812141200"></script>
-        <script type="text/javascript" src="js/custom.js?t=201812141200"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js?t=201812181248"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js?t=201812181248"></script>
+        <script type="text/javascript" src="js/SmoothScroll.js?t=201812181248"></script>
+        <script type="text/javascript" src="js/jquery.scrollTo.min.js?t=201812181248"></script>
+        <script type="text/javascript" src="js/jquery.localScroll.min.js?t=201812181248"></script>
+        <script type="text/javascript" src="js/jquery.viewport.mini.js?t=201812181248"></script>
+        <script type="text/javascript" src="js/jquery.countTo.js?t=201812181248"></script>
+        <script type="text/javascript" src="js/jquery.appear.js?t=201812181248"></script>
+        <script type="text/javascript" src="js/jquery.sticky.js?t=201812181248"></script>
+        <script type="text/javascript" src="js/jquery.parallax-1.1.3.js?t=201812181248"></script>
+        <script type="text/javascript" src="js/jquery.fitvids.js?t=201812181248"></script>
+        <script type="text/javascript" src="js/owl.carousel.min.js?t=201812181248"></script>
+        <script type="text/javascript" src="js/isotope.pkgd.min.js?t=201812181248"></script>
+        <script type="text/javascript" src="js/imagesloaded.pkgd.min.js?t=201812181248"></script>
+        <script type="text/javascript" src="js/jquery.magnific-popup.min.js?t=201812181248"></script>
+        <script type="text/javascript" src="js/wow.min.js?t=201812181248"></script>
+        <script type="text/javascript" src="js/masonry.pkgd.min.js?t=201812181248"></script>
+        <script type="text/javascript" src="js/jquery.simple-text-rotator.min.js?t=201812181248"></script>
+        <script type="text/javascript" src="js/all.js?t=201812181248"></script>
+        <script type="text/javascript" src="js/contact-form.js?t=201812181248"></script>
+        <script type="text/javascript" src="js/jquery.ajaxchimp.min.js?t=201812181248"></script>
+        <script type="text/javascript" src="js/custom.js?t=201812181248"></script>
 
-        <!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js?t=201812141200"></script><![endif]-->
+        <!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js?t=201812181248"></script><![endif]-->
 
 </body>
 

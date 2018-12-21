@@ -6,6 +6,29 @@ var resetHeaderBlueBackgroundStyles = function() {
     document.querySelector('#blueBackground').classList.remove('thankyouShowed');
 };
 
+var resetAllActive = function(section) {
+
+    var MetatraderTriggerId = '#' + section + 'MetatraderTrigger';
+    var NinjaTraderTriggerId = '#' + section + 'NinjaTraderTrigger';
+    var CtraderTriggerId = '#' + section + 'CtraderTrigger';
+
+    var MetatraderTriggerObj = document.querySelector(MetatraderTriggerId);
+    var NinjaTraderTriggerObj = document.querySelector(NinjaTraderTriggerId);
+    var CtraderTriggerObj = document.querySelector(CtraderTriggerId);
+
+    MetatraderTriggerObj.classList.remove('active');
+    NinjaTraderTriggerObj.classList.remove('active');
+    CtraderTriggerObj.classList.remove('active');
+
+};
+
+var addActive = function(platformName, section) {
+    resetAllActive(section);
+    var sectionPlatformNameID = "#" + section + platformName + 'Trigger';
+    var sectionPlatformNameObj = document.querySelector(sectionPlatformNameID);
+    sectionPlatformNameObj.classList.add('active');
+};
+
 var showEmailLead = function(platformName, section) {
     document.querySelector('#' + section + 'Payment').classList.add('hidden');
     document.querySelector('#' + section + 'ThankYou').classList.add('hidden');
@@ -15,7 +38,7 @@ var showEmailLead = function(platformName, section) {
         resetHeaderBlueBackgroundStyles();
         document.querySelector('#blueBackground').classList.add('emailShowed');
     }
-
+    addActive(platformName, section);
 };
 
 var showPaymentLink = function(section) {
@@ -26,20 +49,23 @@ var showPaymentLink = function(section) {
         resetHeaderBlueBackgroundStyles();
         document.querySelector('#blueBackground').classList.add('paymentShowed');
     }
-
+    addActive('Ctrader', section);
 };
 
 var thankYou = function(section) {
     var thankyouId = '#' + section + 'ThankYou';
+    var formId = '#' + section + 'SendEmail';
     var thankyouObj = document.querySelector(thankyouId);
+    var formObj = document.querySelector(thankyouObj);
     thankyouObj.classList.remove('hidden');
+    formObj.classList.add('hidden');
     document.onclick = function() {
         thankyouObj.classList.add('hidden');
-    }
+    };
     if (section == "header") {
         resetHeaderBlueBackgroundStyles();
         document.querySelector('#blueBackground').classList.add('thankyouShowed');
-    }
+    };
 };
 
 var toggleHomeText = function() {
