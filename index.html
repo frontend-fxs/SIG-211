@@ -213,9 +213,9 @@
                     <div class="inner btn btn-mod btn-round btn-large">
 
                         <span>Select your favorite platform</span>
-                        <span onclick="showEmailLead('Metatrader','Text')"> Metatrader </span>
-                        <span onclick="showEmailLead('NinjaTrader','Text')"> NinjaTrader </span>
-                        <span onclick="showPaymentLink('Text')"> Ctrader </span>
+                        <span onclick="showEmailLead('Metatrader','Text')" id="TextMetatraderTrigger"> Metatrader </span>
+                        <span onclick="showEmailLead('NinjaTrader','Text')" id="TextNinjaTraderTrigger"> NinjaTrader </span>
+                        <span onclick="showPaymentLink('Text')" id="TextCtraderTrigger"> Ctrader </span>
 
                         <a target="_blank" data-gtmid="signalslanding-visibility-payment2" id="TextPayment" class="payment hidden" href="https://www.fxstreet.com/signals/download">PROCEED TO PAYMENT<span class="fa fa-credit-card" aria-hidden="true"></span></a>
                         <form action="https://docs.google.com/forms/d/e/1FAIpQLSfl76vAsY3SCRe_H2dnPd75y9R0fso2qy4J5RJ22rsdgf8YRg/formResponse" method="POST" id="TextSendEmail" class="sendEmail hidden" target="textIframe" onsubmit="thankYou('Text');">
@@ -510,9 +510,9 @@
                             <div class="inner btn btn-mod btn-round btn-large">
 
                                 <span>Select your favorite platform</span>
-                                <span onclick="showEmailLead('Metatrader','Portfolio')"> Metatrader </span>
-                                <span onclick="showEmailLead('NinjaTrader','Portfolio')"> NinjaTrader </span>
-                                <span onclick="showPaymentLink('Portfolio')"> Ctrader </span>
+                                <span onclick="showEmailLead('Metatrader','Portfolio')" id="PortfolioMetatraderTrigger"> Metatrader </span>
+                                <span onclick="showEmailLead('NinjaTrader','Portfolio')" id="PortfolioNinjaTraderTrigger"> NinjaTrader </span>
+                                <span onclick="showPaymentLink('Portfolio')" id="PortfolioCtraderTrigger"> Ctrader </span>
 
                                 <a target="_blank" data-gtmid="signalslanding-visibility-payment3" id="PortfolioPayment" class="payment hidden" href="https://www.fxstreet.com/signals/download">PROCEED TO PAYMENT<span class="fa fa-credit-card" aria-hidden="true"></span></a>
                                 <form action="https://docs.google.com/forms/d/e/1FAIpQLSfl76vAsY3SCRe_H2dnPd75y9R0fso2qy4J5RJ22rsdgf8YRg/formResponse" method="POST" id="PortfolioSendEmail" class="sendEmail hidden" target="portfolioIframe" onsubmit="thankYou('Portfolio');">
