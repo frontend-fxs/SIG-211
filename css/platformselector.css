@@ -130,6 +130,7 @@
     float: left;
     clear: both;
     white-space: normal;
+    text-transform: initial;
 }
 
 .hidden {
