@@ -56,7 +56,7 @@ var thankYou = function(section) {
     var thankyouId = '#' + section + 'ThankYou';
     var formId = '#' + section + 'SendEmail';
     var thankyouObj = document.querySelector(thankyouId);
-    var formObj = document.querySelector(thankyouObj);
+    var formObj = document.querySelector(formId);
     thankyouObj.classList.remove('hidden');
     formObj.classList.add('hidden');
     document.onclick = function() {

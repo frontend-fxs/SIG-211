@@ -78,6 +78,7 @@
 .platform .inner .sendEmail label {
     display: block;
     white-space: normal;
+    padding: 12px 0;
 }
 
 .platform .inner .sendEmail label input[type="checkbox"] {
