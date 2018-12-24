@@ -89,13 +89,13 @@
 
                                                 <span>Select your favorite platform</span>
                                                 <span onclick="showEmailLead('Metatrader','header')" id="headerMetatraderTrigger"> Metatrader </span>
-                                                <span onclick="showEmailLead('NinjaTrader','header')" id="headerNinjaTraderTrigger"> NinjaTrader </span>
+                                                <span onclick="showEmailLead('Ninjatrader','header')" id="headerNinjatraderTrigger"> Ninjatrader </span>
                                                 <span onclick="showPaymentLink('header')" id="headerCtraderTrigger"> Ctrader </span>
 
                                                 <a target="_blank" data-gtmid="signalslanding-visibility-payment1" id="headerPayment" class="payment hidden" href="https://www.fxstreet.com/signals/download">PROCEED TO PAYMENT<span class="fa fa-credit-card" aria-hidden="true"></span></a>
-                                                <form action="https://docs.google.com/forms/d/e/1FAIpQLSfl76vAsY3SCRe_H2dnPd75y9R0fso2qy4J5RJ22rsdgf8YRg/formResponse" method="POST" id="headerSendEmail" class="sendEmail hidden" target="headerIframe" onsubmit="thankYou('header');">
+                                                <form action="https://docs.google.com/forms/d/e/1FAIpQLSfl76vAsY3SCRe_H2dnPd75y9R0fso2qy4J5RJ22rsdgf8YRg/formResponse" method="POST" id="headerSendEmail" class="sendEmail hidden" target="headerIframe" onsubmit="thankYou('header',);">
                                                     <label for="headerEmail">Please type your email</label>
-                                                    <input type="email" class="email" id="headerEmail" name="entry.1342467543" onkeypress="updateForm('headerEmail')">
+                                                    <input type="email" class="email" id="headerEmail" name="entry.1342467543" onblur="updateForm('headerEmail')">
                                                     <input type="hidden" id="headerPlatform" name="entry.3304799">
                                                     <label>
                                                         <input type="checkbox" required />
@@ -214,13 +214,13 @@
 
                         <span>Select your favorite platform</span>
                         <span onclick="showEmailLead('Metatrader','Text')" id="TextMetatraderTrigger"> Metatrader </span>
-                        <span onclick="showEmailLead('NinjaTrader','Text')" id="TextNinjaTraderTrigger"> NinjaTrader </span>
+                        <span onclick="showEmailLead('Ninjatrader','Text')" id="TextNinjatraderTrigger"> Ninjatrader </span>
                         <span onclick="showPaymentLink('Text')" id="TextCtraderTrigger"> Ctrader </span>
 
                         <a target="_blank" data-gtmid="signalslanding-visibility-payment2" id="TextPayment" class="payment hidden" href="https://www.fxstreet.com/signals/download">PROCEED TO PAYMENT<span class="fa fa-credit-card" aria-hidden="true"></span></a>
                         <form action="https://docs.google.com/forms/d/e/1FAIpQLSfl76vAsY3SCRe_H2dnPd75y9R0fso2qy4J5RJ22rsdgf8YRg/formResponse" method="POST" id="TextSendEmail" class="sendEmail hidden" target="textIframe" onsubmit="thankYou('Text');">
                             <label for="Textemail">Please type your email</label><br />
-                            <input type="email" class="email" id="Textemail" name="entry.1342467543" onkeypress="updateForm('Textemail')">
+                            <input type="email" class="email" id="Textemail" name="entry.1342467543" onblur="updateForm('Textemail')">
                             <input type="hidden" id="TextPlatform" name="entry.3304799"><br />
                             <label>
                                 <input type="checkbox" required />
@@ -511,13 +511,13 @@
 
                                 <span>Select your favorite platform</span>
                                 <span onclick="showEmailLead('Metatrader','Portfolio')" id="PortfolioMetatraderTrigger"> Metatrader </span>
-                                <span onclick="showEmailLead('NinjaTrader','Portfolio')" id="PortfolioNinjaTraderTrigger"> NinjaTrader </span>
+                                <span onclick="showEmailLead('Ninjatrader','Portfolio')" id="PortfolioNinjatraderTrigger"> Ninjatrader </span>
                                 <span onclick="showPaymentLink('Portfolio')" id="PortfolioCtraderTrigger"> Ctrader </span>
 
                                 <a target="_blank" data-gtmid="signalslanding-visibility-payment3" id="PortfolioPayment" class="payment hidden" href="https://www.fxstreet.com/signals/download">PROCEED TO PAYMENT<span class="fa fa-credit-card" aria-hidden="true"></span></a>
                                 <form action="https://docs.google.com/forms/d/e/1FAIpQLSfl76vAsY3SCRe_H2dnPd75y9R0fso2qy4J5RJ22rsdgf8YRg/formResponse" method="POST" id="PortfolioSendEmail" class="sendEmail hidden" target="portfolioIframe" onsubmit="thankYou('Portfolio');">
                                     <label for="portfolioEmail">Please type your email</label><br />
-                                    <input type="email" class="email" id="portfolioEmail" name="entry.1342467543" onkeypress="updateForm('portfolioEmail')">
+                                    <input type="email" class="email" id="portfolioEmail" name="entry.1342467543" onblur="updateForm('portfolioEmail')">
                                     <input type="hidden" id="PortfolioPlatform" name="entry.3304799"><br />
                                     <label>
                                         <input type="checkbox" required />
