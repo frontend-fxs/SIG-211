@@ -70,18 +70,20 @@ var sendEmailLead = function() {
         "headers": {
             "Content-Type": "application/x-www-form-urlencoded",
             "cache-control": "no-cache",
-            "Postman-Token": "124588f3-5a54-4c83-aaba-a36aba2590e4"
+            "Postman-Token": "0c068b48-df90-46d0-b54e-009366ea8c88"
         },
         "data": {
             "From": "signals@fxstreet.com",
             "To": userEmail,
             "Body": "",
-            "TemplateName": platformName,
+            "TemplateName": "Signals " + platformName,
             "Subject": "Thanks for your interest in the FXstreet Market Impact Signals app"
         }
-    };
+    }
     $.ajax(settings).done(function(response) {
         console.log(response);
+    }).error(function(error) {
+        console.log(error);
     });
 };
 
