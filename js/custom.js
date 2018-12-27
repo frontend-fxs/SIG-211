@@ -13,15 +13,15 @@ var resetHeaderBlueBackgroundStyles = function () {
 var resetAllActive = function (section) {
 
     var MetatraderTriggerId = '#' + section + 'MetatraderTrigger';
-    var NinjaTraderTriggerId = '#' + section + 'NinjaTraderTrigger';
+    var NinjatraderTriggerId = '#' + section + 'NinjatraderTrigger';
     var CtraderTriggerId = '#' + section + 'CtraderTrigger';
 
     var MetatraderTriggerObj = document.querySelector(MetatraderTriggerId);
-    var NinjaTraderTriggerObj = document.querySelector(NinjaTraderTriggerId);
+    var NinjatraderTriggerObj = document.querySelector(NinjatraderTriggerId);
     var CtraderTriggerObj = document.querySelector(CtraderTriggerId);
 
     MetatraderTriggerObj.classList.remove('active');
-    NinjaTraderTriggerObj.classList.remove('active');
+    NinjatraderTriggerObj.classList.remove('active');
     CtraderTriggerObj.classList.remove('active');
 
 };
@@ -59,28 +59,28 @@ var showPaymentLink = function (section) {
 
 var updateForm = function (Id) {
     userEmail = document.querySelector('#' + Id).value;
+    userEmail = userEmail.replace('@','%40');
 };
 
 var sendEmailLead = function () {
+    var data = "From='signals%40fxstreet.com'&To='";
+    data += userEmail;
+    data += "'&Body=''&";
+    data += "TemplateName = '";
+    data += + platformName
+        data+= "' & Subject='Thanks for your interest in the FXstreet Market Impact Signals app'";
     var xhr = new XMLHttpRequest();
-
-    xhr.open('POST', 'https://externalservices-qa-bo-webapi-fxs.azurewebsites.net/api/Email/send');
-    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-    xhr.onload = function () {
-        if (xhr.status === 200) {
-            alert('Something went wrong. '  + xhr.responseText);
+    xhr.withCredentials = true;
+    xhr.addEventListener("readystatechange", function () {
+        if (this.readyState === 4) {
+            console.log(this.responseText);
         }
-        else if (xhr.status !== 200) {
-            alert('Request failed.  Returned status of ' + xhr.status);
-        }
-    };
-    xhr.send(JSON.stringify({
-        From:'signals@fxstreet.com',
-        To: userEmail,
-        Body:'',
-        TemplateName: platformName,
-        Subject:'Thanks for your interest in the FXstreet Market Impact Signals app'
-    }));
+    });
+    xhr.open("POST", "https://externalservices.fxstreet.com/api/Email/send");
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhr.setRequestHeader("cache-control", "no-cache");
+    xhr.setRequestHeader("Postman-Token", "43b07ecf-0386-4178-ae27-486310452dd3");
+    xhr.send(data);
 };
 
 var thankYou = function (section) {
