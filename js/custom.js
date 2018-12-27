@@ -4,13 +4,13 @@ var userEmail = "";
 
 /* Platform selector functions */
 
-var resetHeaderBlueBackgroundStyles = function () {
+var resetHeaderBlueBackgroundStyles = function() {
     document.querySelector('#blueBackground').classList.remove('emailShowed');
     document.querySelector('#blueBackground').classList.remove('paymentShowed');
     document.querySelector('#blueBackground').classList.remove('thankyouShowed');
 };
 
-var resetAllActive = function (section) {
+var resetAllActive = function(section) {
 
     var MetatraderTriggerId = '#' + section + 'MetatraderTrigger';
     var NinjatraderTriggerId = '#' + section + 'NinjatraderTrigger';
@@ -26,14 +26,14 @@ var resetAllActive = function (section) {
 
 };
 
-var addActive = function (platformName, section) {
+var addActive = function(platformName, section) {
     resetAllActive(section);
     var sectionPlatformNameID = "#" + section + platformName + 'Trigger';
     var sectionPlatformNameObj = document.querySelector(sectionPlatformNameID);
     sectionPlatformNameObj.classList.add('active');
 };
 
-var showEmailLead = function (platformNameP, section) {
+var showEmailLead = function(platformNameP, section) {
     document.querySelector('#' + section + 'Payment').classList.add('hidden');
     document.querySelector('#' + section + 'ThankYou').classList.add('hidden');
     document.querySelector('#' + section + 'SendEmail').classList.remove('hidden');
@@ -46,7 +46,7 @@ var showEmailLead = function (platformNameP, section) {
     addActive(platformName, section);
 };
 
-var showPaymentLink = function (section) {
+var showPaymentLink = function(section) {
     document.querySelector('#' + section + 'ThankYou').classList.add('hidden');
     document.querySelector('#' + section + 'SendEmail').classList.add('hidden');
     document.querySelector('#' + section + 'Payment').classList.remove('hidden');
@@ -57,21 +57,21 @@ var showPaymentLink = function (section) {
     addActive('Ctrader', section);
 };
 
-var updateForm = function (Id) {
+var updateForm = function(Id) {
     userEmail = document.querySelector('#' + Id).value;
-    userEmail = userEmail.replace('@','%40');
+    userEmail = userEmail.replace('@', '%40');
 };
 
-var sendEmailLead = function () {
+var sendEmailLead = function() {
     var data = "From='signals%40fxstreet.com'&To='";
     data += userEmail;
     data += "'&Body=''&";
     data += "TemplateName = '";
-    data += + platformName
-        data+= "' & Subject='Thanks for your interest in the FXstreet Market Impact Signals app'";
+    data += platformName;
+    data += "' & Subject='Thanks for your interest in the FXstreet Market Impact Signals app'";
     var xhr = new XMLHttpRequest();
     xhr.withCredentials = true;
-    xhr.addEventListener("readystatechange", function () {
+    xhr.addEventListener("readystatechange", function() {
         if (this.readyState === 4) {
             console.log(this.responseText);
         }
@@ -83,15 +83,15 @@ var sendEmailLead = function () {
     xhr.send(data);
 };
 
-var thankYou = function (section) {
+var thankYou = function(section) {
     sendEmailLead();
     var thankyouId = '#' + section + 'ThankYou';
-    var formId = '#' +section+'SendEmail';
+    var formId = '#' + section + 'SendEmail';
     var thankyouObj = document.querySelector(thankyouId);
     var formObj = document.querySelector(formId);
     thankyouObj.classList.remove('hidden');
     formObj.classList.add('hidden');
-    document.onclick = function () {
+    document.onclick = function() {
         thankyouObj.classList.add('hidden');
     };
     if (section === "header") {
@@ -100,18 +100,18 @@ var thankYou = function (section) {
     }
 };
 
-var toggleHomeText = function () {
+var toggleHomeText = function() {
     document.querySelector('#platformHeader').classList.toggle('hidden');
     document.querySelector('#homeText').classList.toggle('opened');
 };
 
-var toggleText = function () {
+var toggleText = function() {
     document.querySelector('#platformText').classList.toggle('hidden');
     document.querySelector('#about').classList.toggle('opened');
     document.querySelector('#textCTA').classList.toggle('opened');
 };
 
-var togglePortfolio = function () {
+var togglePortfolio = function() {
     document.querySelector('#platformPortfolio').classList.toggle('hidden');
     document.querySelector('#portfolio').classList.toggle('opened');
     document.querySelector('#portfolioCTA').classList.toggle('opened');
