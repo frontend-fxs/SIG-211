@@ -73,11 +73,11 @@ var sendEmailLead = function() {
             "Postman-Token": "124588f3-5a54-4c83-aaba-a36aba2590e4"
         },
         "data": {
-            "From": "'signals@fxstreet.com'",
-            "To": "'" + userEmail + "'",
-            "Body": "''",
-            "TemplateName": "'" + platformName + "'",
-            "Subject": "'Thanks for your interest in the FXstreet Market Impact Signals app'"
+            "From": "signals@fxstreet.com",
+            "To": userEmail,
+            "Body": "",
+            "TemplateName": platformName,
+            "Subject": "Thanks for your interest in the FXstreet Market Impact Signals app"
         }
     };
     $.ajax(settings).done(function(response) {
