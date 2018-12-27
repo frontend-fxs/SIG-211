@@ -59,7 +59,6 @@ var showPaymentLink = function(section) {
 
 var updateForm = function(Id) {
     userEmail = document.querySelector('#' + Id).value;
-    userEmail = userEmail.replace('@', '%40');
 };
 
 var sendEmailLead = function() {
