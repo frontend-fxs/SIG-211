@@ -65,7 +65,8 @@ var sendEmailLead = function() {
     var settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://externalservices.fxstreet.com/api/Email/send",
+        //"url": "https://externalservices.fxstreet.com/api/Email/send",
+        "url": "https://externalservices-qa-bo-webapi-fxs.azurewebsites.net/api/Email/send",
         "method": "POST",
         "headers": {
             "Content-Type": "application/x-www-form-urlencoded",
@@ -76,7 +77,8 @@ var sendEmailLead = function() {
             "From": "signals@fxstreet.com",
             "To": userEmail,
             "Body": "",
-            "TemplateName": "Signals " + platformName,
+            //"TemplateName": "Signals " + platformName,
+            "TemplateName": "Signals welcome",
             "Subject": "Thanks for your interest in the FXstreet Market Impact Signals app"
         }
     }
@@ -119,5 +121,4 @@ var togglePortfolio = function() {
     document.querySelector('#platformPortfolio').classList.toggle('hidden');
     document.querySelector('#portfolio').classList.toggle('opened');
     document.querySelector('#portfolioCTA').classList.toggle('opened');
-
 };
