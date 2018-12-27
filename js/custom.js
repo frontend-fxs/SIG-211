@@ -63,24 +63,27 @@ var updateForm = function(Id) {
 };
 
 var sendEmailLead = function() {
-    var data = "From='signals%40fxstreet.com'&To='";
-    data += userEmail;
-    data += "'&Body=''&";
-    data += "TemplateName = '";
-    data += platformName;
-    data += "' & Subject='Thanks for your interest in the FXstreet Market Impact Signals app'";
-    var xhr = new XMLHttpRequest();
-    xhr.withCredentials = true;
-    xhr.addEventListener("readystatechange", function() {
-        if (this.readyState === 4) {
-            console.log(this.responseText);
+    var settings = {
+        "async": true,
+        "crossDomain": true,
+        "url": "https://externalservices.fxstreet.com/api/Email/send",
+        "method": "POST",
+        "headers": {
+            "Content-Type": "application/x-www-form-urlencoded",
+            "cache-control": "no-cache",
+            "Postman-Token": "124588f3-5a54-4c83-aaba-a36aba2590e4"
+        },
+        "data": {
+            "From": "'signals@fxstreet.com'",
+            "To": "'" + userEmail + "'",
+            "Body": "''",
+            "TemplateName": "'" + platformName + "'",
+            "Subject": "'Thanks for your interest in the FXstreet Market Impact Signals app'"
         }
+    };
+    $.ajax(settings).done(function(response) {
+        console.log(response);
     });
-    xhr.open("POST", "https://externalservices.fxstreet.com/api/Email/send");
-    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    xhr.setRequestHeader("cache-control", "no-cache");
-    xhr.setRequestHeader("Postman-Token", "43b07ecf-0386-4178-ae27-486310452dd3");
-    xhr.send(data);
 };
 
 var thankYou = function(section) {
