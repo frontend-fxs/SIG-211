@@ -77,8 +77,7 @@ var sendEmailLead = function() {
             "From": "signals@fxstreet.com",
             "To": userEmail,
             "Body": "",
-            //"TemplateName": "Signals " + platformName,
-            "TemplateName": "Signals welcome",
+            "TemplateName": "Signals " + platformName,
             "Subject": "Thanks for your interest in the FXstreet Market Impact Signals app"
         }
     }
