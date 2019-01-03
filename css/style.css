@@ -1192,6 +1192,10 @@ a.btn-mod:focus {
     padding-bottom: 270px;
 }
 
+.home-text.opened .background.errorShowed {
+    padding-bottom: 465px;
+}
+
 
 /* Scroll down icon */
 
@@ -6784,7 +6788,7 @@ section:hover .small-item-carousel .owl-next {
 }
 
 .side-panel.white .sp-sub>li {
-    border: none!important;
+    border: none !important;
 }
 
 .side-panel.white .sp-social-links>a {
@@ -7049,7 +7053,7 @@ section:hover .small-item-carousel .owl-next {
     }
 }
 
-@media	only screen and (-webkit-min-device-pixel-ratio: 1.3),
+@media only screen and (-webkit-min-device-pixel-ratio: 1.3),
 only screen and (-o-min-device-pixel-ratio: 13/10),
 only screen and (min-resolution: 120dpi) {
     h1 {

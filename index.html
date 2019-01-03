@@ -93,18 +93,21 @@
                                                 <span onclick="showPaymentLink('header')" id="headerCtraderTrigger"> Ctrader </span>
 
                                                 <a target="_blank" data-gtmid="signalslanding-visibility-payment1" id="headerPayment" class="payment hidden" href="https://www.fxstreet.com/signals/download">PROCEED TO PAYMENT<span class="fa fa-credit-card" aria-hidden="true"></span></a>
-                                                <form action="https://docs.google.com/forms/d/e/1FAIpQLSfl76vAsY3SCRe_H2dnPd75y9R0fso2qy4J5RJ22rsdgf8YRg/formResponse" method="POST" id="headerSendEmail" class="sendEmail hidden" target="headerIframe" onsubmit="thankYou('header',);">
+                                                <form action="https://docs.google.com/forms/d/e/1FAIpQLSfl76vAsY3SCRe_H2dnPd75y9R0fso2qy4J5RJ22rsdgf8YRg/formResponse" method="POST" id="headerSendEmail" class="sendEmail hidden" target="headerIframe" onsubmit="sendEmailLead('header',);">
                                                     <label for="headerEmail">Please type your email</label>
                                                     <input type="email" class="email" id="headerEmail" name="entry.1342467543" onblur="updateForm('headerEmail')">
                                                     <input type="hidden" id="headerPlatform" name="entry.3304799">
                                                     <label>
                                                         <input type="checkbox" required />
-                                                        <span class="terms">I have read and I accept <a  target="_blank"  href="/info/terms-conditions" class="fxs_signup_conditions" title="">FXStreet terms and conditions</a>. Your personal information is confidential and not disclosed to any third parties.</span>
+                                                        <span class="terms">I have read and I accept <a target="_blank" href="/info/terms-conditions" class="fxs_signup_conditions" title="">FXStreet terms and conditions</a>. Your personal information is confidential and not disclosed to any third parties.</span>
                                                     </label>
                                                     <input type="submit" class="btn-cta">
                                                 </form>
                                                 <div data-gtmid="signalslanding-visibility-thankyou1" class="hidden thankYou" id="headerThankYou">
                                                     <span>Thank you, check your inbox for further releases of FXS Signals.</span>
+                                                </div>
+                                                <div class="hidden error" id="headerError">
+                                                    <span>Something went wrong.<br/>Please try again in a few minutes.</span>
                                                 </div>
                                                 <iframe style="display:none;" id="headerIframe" name="headerIframe"></iframe>
                                             </div>
@@ -218,18 +221,21 @@
                         <span onclick="showPaymentLink('Text')" id="TextCtraderTrigger"> Ctrader </span>
 
                         <a target="_blank" data-gtmid="signalslanding-visibility-payment2" id="TextPayment" class="payment hidden" href="https://www.fxstreet.com/signals/download">PROCEED TO PAYMENT<span class="fa fa-credit-card" aria-hidden="true"></span></a>
-                        <form action="https://docs.google.com/forms/d/e/1FAIpQLSfl76vAsY3SCRe_H2dnPd75y9R0fso2qy4J5RJ22rsdgf8YRg/formResponse" method="POST" id="TextSendEmail" class="sendEmail hidden" target="textIframe" onsubmit="thankYou('Text');">
+                        <form action="https://docs.google.com/forms/d/e/1FAIpQLSfl76vAsY3SCRe_H2dnPd75y9R0fso2qy4J5RJ22rsdgf8YRg/formResponse" method="POST" id="TextSendEmail" class="sendEmail hidden" target="textIframe" onsubmit="sendEmailLead('Text');">
                             <label for="Textemail">Please type your email</label><br />
                             <input type="email" class="email" id="Textemail" name="entry.1342467543" onblur="updateForm('Textemail')">
                             <input type="hidden" id="TextPlatform" name="entry.3304799"><br />
                             <label>
                                 <input type="checkbox" required />
-                                <span class="terms">I have read and I accept <a  target="_blank" href="/info/terms-conditions" class="fxs_signup_conditions" title="">FXStreet terms and conditions</a>. Your personal information is confidential and not disclosed to any third parties.</span>
+                                <span class="terms">I have read and I accept <a target="_blank" href="/info/terms-conditions" class="fxs_signup_conditions" title="">FXStreet terms and conditions</a>. Your personal information is confidential and not disclosed to any third parties.</span>
                             </label><br />
                             <input type="submit" class="btn-cta">
                         </form>
                         <div data-gtmid="signalslanding-visibility-thankyou2" class="hidden thankYou" id="TextThankYou">
                             <span>Thank you, check your inbox for further releases of FXS Signals.</span>
+                        </div>
+                        <div class="hidden error" id="TextError">
+                            <span>Something went wrong.<br/>Please try again in a few minutes.</span>
                         </div>
                         <iframe style="display:none;" id="textIframe" name="textIframe"></iframe>
                     </div>
@@ -515,18 +521,21 @@
                                 <span onclick="showPaymentLink('Portfolio')" id="PortfolioCtraderTrigger"> Ctrader </span>
 
                                 <a target="_blank" data-gtmid="signalslanding-visibility-payment3" id="PortfolioPayment" class="payment hidden" href="https://www.fxstreet.com/signals/download">PROCEED TO PAYMENT<span class="fa fa-credit-card" aria-hidden="true"></span></a>
-                                <form action="https://docs.google.com/forms/d/e/1FAIpQLSfl76vAsY3SCRe_H2dnPd75y9R0fso2qy4J5RJ22rsdgf8YRg/formResponse" method="POST" id="PortfolioSendEmail" class="sendEmail hidden" target="portfolioIframe" onsubmit="thankYou('Portfolio');">
+                                <form action="https://docs.google.com/forms/d/e/1FAIpQLSfl76vAsY3SCRe_H2dnPd75y9R0fso2qy4J5RJ22rsdgf8YRg/formResponse" method="POST" id="PortfolioSendEmail" class="sendEmail hidden" target="portfolioIframe" onsubmit="sendEmailLead('Portfolio');">
                                     <label for="portfolioEmail">Please type your email</label><br />
                                     <input type="email" class="email" id="portfolioEmail" name="entry.1342467543" onblur="updateForm('portfolioEmail')">
                                     <input type="hidden" id="PortfolioPlatform" name="entry.3304799"><br />
                                     <label>
                                         <input type="checkbox" required />
-                                        <span class="terms">I have read and I accept <a target="_blank"  href="/info/terms-conditions" class="fxs_signup_conditions" title="">FXStreet terms and conditions</a>. Your personal information is confidential and not disclosed to any third parties.</span>
+                                        <span class="terms">I have read and I accept <a target="_blank" href="/info/terms-conditions" class="fxs_signup_conditions" title="">FXStreet terms and conditions</a>. Your personal information is confidential and not disclosed to any third parties.</span>
                                     </label><br />
                                     <input type="submit" class="btn-cta">
                                 </form>
                                 <div data-gtmid="signalslanding-visibility-thankyou3" class="hidden thankYou" id="PortfolioThankYou">
                                     <span>Thank you, check your inbox for further releases of FXS Signals.</span>
+                                </div>
+                                <div class="hidden error" id="PortfolioError">
+                                    <span>Something went wrong.<br/>Please try again in a few minutes.</span>
                                 </div>
                                 <iframe style="display:none;" id="portfolioIframe" name="portfolioIframe"></iframe>
                             </div>

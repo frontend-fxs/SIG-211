@@ -8,6 +8,7 @@ var resetHeaderBlueBackgroundStyles = function() {
     document.querySelector('#blueBackground').classList.remove('emailShowed');
     document.querySelector('#blueBackground').classList.remove('paymentShowed');
     document.querySelector('#blueBackground').classList.remove('thankyouShowed');
+    document.querySelector('#blueBackground').classList.remove('errorShowed');
 };
 
 var resetAllActive = function(section) {
@@ -61,12 +62,41 @@ var updateForm = function(Id) {
     userEmail = document.querySelector('#' + Id).value;
 };
 
-var sendEmailLead = function() {
+
+var thankYou = function(section) {
+    var thankyouId = '#' + section + 'ThankYou';
+    var formId = '#' + section + 'SendEmail';
+    var thankyouObj = document.querySelector(thankyouId);
+    var formObj = document.querySelector(formId);
+    thankyouObj.classList.remove('hidden');
+    formObj.classList.add('hidden');
+    document.onclick = function() {
+        thankyouObj.classList.add('hidden');
+    };
+    if (section === "header") {
+        resetHeaderBlueBackgroundStyles();
+        document.querySelector('#blueBackground').classList.add('thankyouShowed');
+    }
+};
+
+var emailError = function(section) {
+    var errorID = '#' + section + 'Error';
+    var errorObj = document.querySelector(errorID);
+    errorObj.classList.remove('hidden');
+    document.onclick = function() {
+        errorObj.classList.add('hidden');
+    };
+    if (section === "header") {
+        resetHeaderBlueBackgroundStyles();
+        document.querySelector('#blueBackground').classList.add('errorShowed');
+    }
+};
+
+var sendEmailLead = function(section) {
     var settings = {
         "async": true,
         "crossDomain": true,
-        //"url": "https://externalservices.fxstreet.com/api/Email/send",
-        "url": "https://externalservices-qa-bo-webapi-fxs.azurewebsites.net/api/Email/send",
+        "url": "https://externalservices.fxstreet.com/api/Email/send",
         "method": "POST",
         "headers": {
             "Content-Type": "application/x-www-form-urlencoded",
@@ -83,26 +113,11 @@ var sendEmailLead = function() {
     }
     $.ajax(settings).done(function(response) {
         console.log(response);
+        thankYou(section);
     }).error(function(error) {
         console.log(error);
+        emailError(section);
     });
-};
-
-var thankYou = function(section) {
-    sendEmailLead();
-    var thankyouId = '#' + section + 'ThankYou';
-    var formId = '#' + section + 'SendEmail';
-    var thankyouObj = document.querySelector(thankyouId);
-    var formObj = document.querySelector(formId);
-    thankyouObj.classList.remove('hidden');
-    formObj.classList.add('hidden');
-    document.onclick = function() {
-        thankyouObj.classList.add('hidden');
-    };
-    if (section === "header") {
-        resetHeaderBlueBackgroundStyles();
-        document.querySelector('#blueBackground').classList.add('thankyouShowed');
-    }
 };
 
 var toggleHomeText = function() {
